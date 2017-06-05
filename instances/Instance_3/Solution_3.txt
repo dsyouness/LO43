@@ -1,0 +1,2609 @@
+**********The solution contains 121 driver(s).**********
+----Worker 1's task(s)----
+
+workerTimeSum=462
+UnderTime = 18
+IdleTime = 48
+Cost=36
+task:821	startTime:362	finishTime:405BF
+
+task:802	startTime:416	finishTime:459FB
+
+task:46	startTime:462	finishTime:523BA
+
+task:89	startTime:526	finishTime:560AC
+
+task:731	startTime:573	finishTime:627CE
+
+task:773	startTime:633	finishTime:687EC
+
+task:735	startTime:693	finishTime:747CE
+
+task:377	startTime:753	finishTime:824EC
+----Worker 2's task(s)----
+
+workerTimeSum=518
+OverTime = 38
+IdleTime = 135
+Cost=143
+task:722	startTime:383	finishTime:444CE
+
+task:366	startTime:463	finishTime:548EC
+
+task:530	startTime:554	finishTime:575CA
+
+task:91	startTime:576	finishTime:604AC
+
+task:866	startTime:614	finishTime:635CF
+
+task:807	startTime:636	finishTime:674FB
+
+task:828	startTime:682	finishTime:720BF
+
+task:888	startTime:735	finishTime:755FD
+
+task:217	startTime:769	finishTime:796DA
+
+task:581	startTime:855	finishTime:877AD
+
+task:622	startTime:879	finishTime:901DA
+----Worker 3's task(s)----
+
+workerTimeSum=494
+OverTime = 14
+IdleTime = 97
+Cost=81
+task:762	startTime:383	finishTime:444EC
+
+task:685	startTime:456	finishTime:481CB
+
+task:824	startTime:482	finishTime:525BF
+
+task:805	startTime:536	finishTime:579FB
+
+task:251	startTime:586	finishTime:616BC
+
+task:292	startTime:616	finishTime:646CB
+
+task:253	startTime:646	finishTime:676BC
+
+task:694	startTime:676	finishTime:698CB
+
+task:255	startTime:706	finishTime:736BC
+
+task:296	startTime:736	finishTime:766CB
+
+task:257	startTime:766	finishTime:796BC
+
+task:541	startTime:854	finishTime:877CA
+----Worker 4's task(s)----
+
+workerTimeSum=354
+UnderTime = 126
+IdleTime = 46
+Cost=142
+task:721	startTime:363	finishTime:424CE
+
+task:365	startTime:443	finishTime:528EC
+
+task:965	startTime:543	finishTime:597CM
+
+task:986	startTime:603	finishTime:657MC
+
+task:734	startTime:663	finishTime:717CE
+----Worker 5's task(s)----
+
+workerTimeSum=464
+UnderTime = 16
+IdleTime = 69
+Cost=55
+task:1	startTime:376	finishTime:437AB
+
+task:45	startTime:442	finishTime:503BA
+
+task:488	startTime:506	finishTime:530AC
+
+task:689	startTime:536	finishTime:561CB
+
+task:451	startTime:572	finishTime:610BA
+
+task:493	startTime:636	finishTime:657AC
+
+task:967	startTime:663	finishTime:717CM
+
+task:988	startTime:723	finishTime:777MC
+
+task:969	startTime:783	finishTime:840CM
+----Worker 6's task(s)----
+
+workerTimeSum=561
+OverTime = 81
+IdleTime = 205
+Cost=256
+task:42	startTime:382	finishTime:443BA
+
+task:5	startTime:456	finishTime:517AB
+
+task:49	startTime:522	finishTime:583BA
+
+task:96	startTime:726	finishTime:754AC
+
+task:949	startTime:756	finishTime:778CB
+
+task:830	startTime:802	finishTime:843BF
+
+task:811	startTime:856	finishTime:897FB
+
+task:464	startTime:902	finishTime:943BA
+----Worker 7's task(s)----
+
+workerTimeSum=401
+UnderTime = 79
+IdleTime = 55
+Cost=104
+task:281	startTime:376	finishTime:411CB
+
+task:243	startTime:416	finishTime:451BC
+
+task:125	startTime:454	finishTime:488CA
+
+task:567	startTime:495	finishTime:518AD
+
+task:608	startTime:519	finishTime:542DA
+
+task:490	startTime:546	finishTime:567AC
+
+task:946	startTime:576	finishTime:598CB
+
+task:452	startTime:602	finishTime:640BA
+
+task:13	startTime:646	finishTime:697AB
+
+task:655	startTime:706	finishTime:728BC
+
+task:536	startTime:734	finishTime:755CA
+
+task:497	startTime:756	finishTime:777AC
+----Worker 8's task(s)----
+
+workerTimeSum=451
+UnderTime = 29
+IdleTime = 88
+Cost=87
+task:401	startTime:376	finishTime:419AB
+
+task:44	startTime:422	finishTime:483BA
+
+task:87	startTime:486	finishTime:520AC
+
+task:129	startTime:534	finishTime:568CA
+
+task:571	startTime:585	finishTime:605AD
+
+task:612	startTime:619	finishTime:639DA
+
+task:573	startTime:645	finishTime:665AD
+
+task:214	startTime:679	finishTime:706DA
+
+task:15	startTime:706	finishTime:757AB
+
+task:657	startTime:766	finishTime:788BC
+
+task:298	startTime:796	finishTime:827CB
+----Worker 9's task(s)----
+
+workerTimeSum=451
+UnderTime = 29
+IdleTime = 106
+Cost=105
+task:81	startTime:366	finishTime:400AC
+
+task:723	startTime:403	finishTime:464CE
+
+task:367	startTime:483	finishTime:568EC
+
+task:331	startTime:573	finishTime:644CE
+
+task:376	startTime:723	finishTime:794EC
+
+task:869	startTime:794	finishTime:817CF
+----Worker 10's task(s)----
+
+workerTimeSum=447
+UnderTime = 33
+IdleTime = 79
+Cost=82
+task:681	startTime:376	finishTime:401CB
+
+task:43	startTime:402	finishTime:463BA
+
+task:486	startTime:466	finishTime:490AC
+
+task:527	startTime:494	finishTime:518CA
+
+task:9	startTime:536	finishTime:597AB
+
+task:52	startTime:602	finishTime:653BA
+
+task:174	startTime:675	finishTime:702AD
+
+task:615	startTime:709	finishTime:729DA
+
+task:176	startTime:735	finishTime:762AD
+
+task:617	startTime:769	finishTime:789DA
+
+task:178	startTime:795	finishTime:823AD
+----Worker 11's task(s)----
+
+workerTimeSum=480
+UnderTime = 0
+IdleTime = 85
+Cost=55
+task:801	startTime:376	finishTime:419FB
+
+task:444	startTime:422	finishTime:465BA
+
+task:166	startTime:475	finishTime:507AD
+
+task:208	startTime:519	finishTime:551DA
+
+task:170	startTime:555	finishTime:582AD
+
+task:211	startTime:589	finishTime:616DA
+
+task:12	startTime:616	finishTime:667AB
+
+task:254	startTime:676	finishTime:706BC
+
+task:295	startTime:706	finishTime:736CB
+
+task:656	startTime:736	finishTime:758BC
+
+task:137	startTime:764	finishTime:792CA
+
+task:100	startTime:826	finishTime:856AC
+----Worker 12's task(s)----
+
+workerTimeSum=448
+UnderTime = 32
+IdleTime = 77
+Cost=79
+task:941	startTime:376	finishTime:401CB
+
+task:443	startTime:402	finishTime:445BA
+
+task:485	startTime:446	finishTime:470AC
+
+task:126	startTime:474	finishTime:508CA
+
+task:168	startTime:515	finishTime:547AD
+
+task:610	startTime:559	finishTime:579DA
+
+task:92	startTime:606	finishTime:634AC
+
+task:947	startTime:636	finishTime:658CB
+
+task:54	startTime:662	finishTime:713BA
+
+task:496	startTime:726	finishTime:747AC
+
+task:337	startTime:753	finishTime:824CE
+----Worker 13's task(s)----
+
+workerTimeSum=482
+OverTime = 2
+IdleTime = 156
+Cost=128
+task:601	startTime:379	finishTime:402DA
+
+task:3	startTime:416	finishTime:477AB
+
+task:47	startTime:482	finishTime:543BA
+
+task:90	startTime:546	finishTime:574AC
+
+task:531	startTime:584	finishTime:605CA
+
+task:94	startTime:666	finishTime:694AC
+
+task:948	startTime:696	finishTime:718CB
+
+task:457	startTime:752	finishTime:790BA
+
+task:579	startTime:815	finishTime:837AD
+
+task:620	startTime:839	finishTime:861DA
+----Worker 14's task(s)----
+
+workerTimeSum=461
+UnderTime = 19
+IdleTime = 182
+Cost=171
+task:901	startTime:379	finishTime:402DF
+
+task:842	startTime:426	finishTime:450FC
+
+task:285	startTime:456	finishTime:491CB
+
+task:924	startTime:496	finishTime:521BC
+
+task:729	startTime:523	finishTime:584CE
+
+task:776	startTime:723	finishTime:777EC
+
+task:738	startTime:783	finishTime:840CE
+----Worker 15's task(s)----
+
+workerTimeSum=471
+UnderTime = 9
+IdleTime = 91
+Cost=70
+task:241	startTime:376	finishTime:411BC
+
+task:123	startTime:414	finishTime:448CA
+
+task:565	startTime:455	finishTime:478AD
+
+task:606	startTime:479	finishTime:502DA
+
+task:88	startTime:506	finishTime:540AC
+
+task:330	startTime:543	finishTime:614CE
+
+task:374	startTime:663	finishTime:734EC
+
+task:136	startTime:734	finishTime:762CA
+
+task:98	startTime:786	finishTime:816AC
+
+task:299	startTime:816	finishTime:847CB
+----Worker 16's task(s)----
+
+workerTimeSum=554
+OverTime = 74
+IdleTime = 120
+Cost=164
+task:362	startTime:383	finishTime:468EC
+
+task:526	startTime:474	finishTime:498CA
+
+task:8	startTime:516	finishTime:577AB
+
+task:651	startTime:586	finishTime:608BC
+
+task:733	startTime:633	finishTime:687CE
+
+task:775	startTime:693	finishTime:747EC
+
+task:737	startTime:753	finishTime:807CE
+
+task:781	startTime:843	finishTime:900EC
+
+task:544	startTime:914	finishTime:937CA
+----Worker 17's task(s)----
+
+workerTimeSum=431
+UnderTime = 49
+IdleTime = 59
+Cost=78
+task:321	startTime:363	finishTime:448CE
+
+task:766	startTime:463	finishTime:524EC
+
+task:945	startTime:536	finishTime:561CB
+
+task:926	startTime:576	finishTime:598BC
+
+task:732	startTime:603	finishTime:657CE
+
+task:774	startTime:663	finishTime:717EC
+
+task:336	startTime:723	finishTime:794CE
+----Worker 18's task(s)----
+
+workerTimeSum=464
+UnderTime = 16
+IdleTime = 74
+Cost=60
+task:361	startTime:363	finishTime:448EC
+
+task:943	startTime:456	finishTime:481CB
+
+task:447	startTime:482	finishTime:525BA
+
+task:169	startTime:535	finishTime:567AD
+
+task:611	startTime:589	finishTime:609DA
+
+task:172	startTime:615	finishTime:642AD
+
+task:213	startTime:649	finishTime:676DA
+
+task:414	startTime:676	finishTime:714AB
+
+task:456	startTime:722	finishTime:760BA
+
+task:177	startTime:765	finishTime:792AD
+
+task:218	startTime:799	finishTime:827DA
+----Worker 19's task(s)----
+
+workerTimeSum=480
+UnderTime = 0
+IdleTime = 140
+Cost=110
+task:961	startTime:383	finishTime:444CM
+
+task:983	startTime:463	finishTime:524MC
+
+task:289	startTime:536	finishTime:571CB
+
+task:51	startTime:572	finishTime:623BA
+
+task:14	startTime:676	finishTime:727AB
+
+task:58	startTime:782	finishTime:835BA
+
+task:180	startTime:835	finishTime:863AD
+----Worker 20's task(s)----
+
+workerTimeSum=578
+OverTime = 98
+IdleTime = 178
+Cost=246
+task:981	startTime:383	finishTime:444MC
+
+task:726	startTime:463	finishTime:524CE
+
+task:370	startTime:543	finishTime:614EC
+
+task:132	startTime:614	finishTime:642CA
+
+task:173	startTime:645	finishTime:672AD
+
+task:614	startTime:679	finishTime:699DA
+
+task:575	startTime:705	finishTime:725AD
+
+task:616	startTime:739	finishTime:759DA
+
+task:577	startTime:765	finishTime:785AD
+
+task:618	startTime:799	finishTime:821DA
+
+task:183	startTime:895	finishTime:923AD
+
+task:625	startTime:939	finishTime:961DA
+----Worker 21's task(s)----
+
+workerTimeSum=539
+OverTime = 59
+IdleTime = 131
+Cost=160
+task:283	startTime:416	finishTime:451CB
+
+task:245	startTime:456	finishTime:491BC
+
+task:127	startTime:494	finishTime:528CA
+
+task:569	startTime:535	finishTime:558AD
+
+task:210	startTime:559	finishTime:586DA
+
+task:411	startTime:586	finishTime:624AB
+
+task:453	startTime:632	finishTime:670BA
+
+task:576	startTime:735	finishTime:755AD
+
+task:909	startTime:759	finishTime:779DF
+
+task:889	startTime:795	finishTime:817FD
+
+task:619	startTime:819	finishTime:841DA
+
+task:421	startTime:856	finishTime:897AB
+
+task:64	startTime:902	finishTime:955BA
+----Worker 22's task(s)----
+
+workerTimeSum=561
+OverTime = 81
+IdleTime = 319
+Cost=370
+task:841	startTime:386	finishTime:410FC
+
+task:683	startTime:416	finishTime:441CB
+
+task:445	startTime:442	finishTime:485BA
+
+task:407	startTime:496	finishTime:539AB
+
+task:50	startTime:542	finishTime:593BA
+
+task:182	startTime:875	finishTime:903AD
+
+task:224	startTime:919	finishTime:947DA
+----Worker 23's task(s)----
+
+workerTimeSum=592
+OverTime = 112
+IdleTime = 182
+Cost=264
+task:162	startTime:395	finishTime:427AD
+
+task:604	startTime:439	finishTime:462DA
+
+task:6	startTime:476	finishTime:537AB
+
+task:450	startTime:542	finishTime:580BA
+
+task:572	startTime:615	finishTime:635AD
+
+task:613	startTime:649	finishTime:669DA
+
+task:574	startTime:675	finishTime:695AD
+
+task:908	startTime:699	finishTime:719DF
+
+task:848	startTime:726	finishTime:747FC
+
+task:697	startTime:766	finishTime:788CB
+
+task:459	startTime:802	finishTime:843BA
+
+task:101	startTime:846	finishTime:876AC
+
+task:304	startTime:916	finishTime:947CB
+
+task:266	startTime:956	finishTime:987BC
+----Worker 24's task(s)----
+
+workerTimeSum=522
+OverTime = 42
+IdleTime = 152
+Cost=164
+task:881	startTime:395	finishTime:418FD
+
+task:902	startTime:419	finishTime:442DF
+
+task:803	startTime:456	finishTime:499FB
+
+task:248	startTime:516	finishTime:551BC
+
+task:290	startTime:556	finishTime:586CB
+
+task:652	startTime:616	finishTime:638BC
+
+task:334	startTime:663	finishTime:734CE
+
+task:777	startTime:753	finishTime:807EC
+
+task:539	startTime:814	finishTime:837CA
+
+task:501	startTime:846	finishTime:869AC
+
+task:543	startTime:894	finishTime:917CA
+----Worker 25's task(s)----
+
+workerTimeSum=564
+OverTime = 84
+IdleTime = 253
+Cost=307
+task:2	startTime:396	finishTime:457AB
+
+task:446	startTime:462	finishTime:505BA
+
+task:408	startTime:516	finishTime:559AB
+
+task:927	startTime:636	finishTime:658BC
+
+task:698	startTime:796	finishTime:820CB
+
+task:60	startTime:822	finishTime:875BA
+
+task:422	startTime:876	finishTime:917AB
+
+task:933	startTime:936	finishTime:960BC
+----Worker 26's task(s)----
+
+workerTimeSum=454
+UnderTime = 26
+IdleTime = 61
+Cost=57
+task:481	startTime:366	finishTime:390AC
+
+task:282	startTime:396	finishTime:431CB
+
+task:244	startTime:436	finishTime:471BC
+
+task:863	startTime:474	finishTime:498CF
+
+task:844	startTime:506	finishTime:530FC
+
+task:730	startTime:543	finishTime:597CE
+
+task:772	startTime:603	finishTime:657EC
+
+task:867	startTime:674	finishTime:695CF
+
+task:808	startTime:696	finishTime:734FB
+
+task:256	startTime:736	finishTime:766BC
+
+task:297	startTime:766	finishTime:796CB
+
+task:658	startTime:796	finishTime:820BC
+----Worker 27's task(s)----
+
+workerTimeSum=561
+OverTime = 81
+IdleTime = 294
+Cost=345
+task:402	startTime:396	finishTime:439AB
+
+task:823	startTime:442	finishTime:485BF
+
+task:884	startTime:515	finishTime:538FD
+
+task:905	startTime:539	finishTime:562DF
+
+task:810	startTime:816	finishTime:857FB
+
+task:62	startTime:862	finishTime:915BA
+
+task:424	startTime:916	finishTime:957AB
+----Worker 28's task(s)----
+
+workerTimeSum=578
+OverTime = 98
+IdleTime = 123
+Cost=191
+task:602	startTime:399	finishTime:422DA
+
+task:404	startTime:436	finishTime:479AB
+
+task:647	startTime:496	finishTime:521BC
+
+task:329	startTime:523	finishTime:608CE
+
+task:373	startTime:633	finishTime:704EC
+
+task:535	startTime:704	finishTime:725CA
+
+task:417	startTime:766	finishTime:804AB
+
+task:259	startTime:816	finishTime:847BC
+
+task:701	startTime:856	finishTime:880CB
+
+task:63	startTime:882	finishTime:935BA
+
+task:425	startTime:936	finishTime:977AB
+----Worker 29's task(s)----
+
+workerTimeSum=578
+OverTime = 98
+IdleTime = 109
+Cost=177
+task:822	startTime:402	finishTime:445BF
+
+task:883	startTime:475	finishTime:498FD
+
+task:607	startTime:499	finishTime:522DA
+
+task:489	startTime:526	finishTime:550AC
+
+task:130	startTime:554	finishTime:582CA
+
+task:171	startTime:585	finishTime:612AD
+
+task:212	startTime:619	finishTime:646DA
+
+task:413	startTime:646	finishTime:684AB
+
+task:55	startTime:692	finishTime:743BA
+
+task:97	startTime:756	finishTime:784AC
+
+task:538	startTime:794	finishTime:817CA
+
+task:20	startTime:836	finishTime:889AB
+
+task:932	startTime:896	finishTime:920BC
+
+task:745	startTime:923	finishTime:980CE
+----Worker 30's task(s)----
+
+workerTimeSum=592
+OverTime = 112
+IdleTime = 301
+Cost=383
+task:363	startTime:403	finishTime:488EC
+
+task:687	startTime:496	finishTime:521CB
+
+task:825	startTime:522	finishTime:565BF
+
+task:890	startTime:835	finishTime:857FD
+
+task:911	startTime:859	finishTime:881DF
+
+task:812	startTime:896	finishTime:937FB
+
+task:66	startTime:942	finishTime:995BA
+----Worker 31's task(s)----
+
+workerTimeSum=554
+OverTime = 74
+IdleTime = 317
+Cost=361
+task:763	startTime:403	finishTime:464EC
+
+task:286	startTime:476	finishTime:511CB
+
+task:648	startTime:516	finishTime:541BC
+
+task:690	startTime:556	finishTime:578CB
+
+task:461	startTime:842	finishTime:883BA
+
+task:103	startTime:886	finishTime:916AC
+
+task:545	startTime:934	finishTime:957CA
+----Worker 32's task(s)----
+
+workerTimeSum=593
+OverTime = 113
+IdleTime = 332
+Cost=415
+task:403	startTime:416	finishTime:459AB
+
+task:246	startTime:476	finishTime:511BC
+
+task:528	startTime:514	finishTime:538CA
+
+task:410	startTime:556	finishTime:594AB
+
+task:260	startTime:836	finishTime:867BC
+
+task:871	startTime:874	finishTime:897CF
+
+task:892	startTime:915	finishTime:937FD
+
+task:913	startTime:939	finishTime:961DF
+
+task:854	startTime:986	finishTime:1009FC
+----Worker 33's task(s)----
+
+workerTimeSum=581
+OverTime = 101
+IdleTime = 369
+Cost=440
+task:922	startTime:416	finishTime:441BC
+
+task:686	startTime:476	finishTime:501CB
+
+task:649	startTime:536	finishTime:561BC
+
+task:970	startTime:823	finishTime:880CM
+
+task:992	startTime:903	finishTime:960MC
+
+task:547	startTime:974	finishTime:997CA
+----Worker 34's task(s)----
+
+workerTimeSum=600
+OverTime = 120
+IdleTime = 348
+Cost=438
+task:765	startTime:443	finishTime:504EC
+
+task:864	startTime:514	finishTime:538CF
+
+task:885	startTime:555	finishTime:575FD
+
+task:910	startTime:819	finishTime:841DF
+
+task:891	startTime:875	finishTime:897FD
+
+task:912	startTime:899	finishTime:921DF
+
+task:853	startTime:946	finishTime:969FC
+
+task:147	startTime:974	finishTime:1004CA
+
+task:189	startTime:1015	finishTime:1043AD
+----Worker 35's task(s)----
+
+workerTimeSum=571
+OverTime = 91
+IdleTime = 320
+Cost=381
+task:284	startTime:436	finishTime:471CB
+
+task:646	startTime:476	finishTime:501BC
+
+task:964	startTime:503	finishTime:564CM
+
+task:990	startTime:823	finishTime:880MC
+
+task:872	startTime:914	finishTime:937CF
+
+task:893	startTime:955	finishTime:977FD
+
+task:227	startTime:979	finishTime:1007DA
+----Worker 36's task(s)----
+
+workerTimeSum=567
+OverTime = 87
+IdleTime = 204
+Cost=261
+task:242	startTime:396	finishTime:431BC
+
+task:684	startTime:436	finishTime:461CB
+
+task:247	startTime:496	finishTime:531BC
+
+task:529	startTime:534	finishTime:558CA
+
+task:491	startTime:576	finishTime:597AC
+
+task:532	startTime:614	finishTime:635CA
+
+task:93	startTime:636	finishTime:664AC
+
+task:134	startTime:674	finishTime:702CA
+
+task:175	startTime:705	finishTime:732AD
+
+task:216	startTime:739	finishTime:766DA
+
+task:17	startTime:766	finishTime:817AB
+
+task:833	startTime:922	finishTime:963BF
+----Worker 37's task(s)----
+
+workerTimeSum=477
+UnderTime = 3
+IdleTime = 66
+Cost=39
+task:993	startTime:943	finishTime:1000MC
+
+task:749	startTime:1003	finishTime:1060CE
+
+task:392	startTime:1063	finishTime:1137EC
+
+task:756	startTime:1143	finishTime:1192CE
+
+task:397	startTime:1203	finishTime:1269EC
+
+task:879	startTime:1274	finishTime:1294CF
+
+task:820	startTime:1296	finishTime:1331FB
+
+task:279	startTime:1336	finishTime:1363BC
+
+task:160	startTime:1394	finishTime:1420CA
+----Worker 38's task(s)----
+
+workerTimeSum=483
+OverTime = 3
+IdleTime = 198
+Cost=171
+task:582	startTime:875	finishTime:897AD
+
+task:623	startTime:899	finishTime:921DA
+
+task:585	startTime:935	finishTime:957AD
+
+task:226	startTime:959	finishTime:987DA
+
+task:588	startTime:995	finishTime:1017AD
+
+task:229	startTime:1019	finishTime:1047DA
+
+task:191	startTime:1055	finishTime:1083AD
+
+task:233	startTime:1099	finishTime:1127DA
+
+task:195	startTime:1135	finishTime:1163AD
+
+task:919	startTime:1179	finishTime:1198DF
+
+task:899	startTime:1275	finishTime:1294FD
+
+task:639	startTime:1339	finishTime:1358DA
+----Worker 39's task(s)----
+
+workerTimeSum=464
+UnderTime = 16
+IdleTime = 119
+Cost=105
+task:300	startTime:836	finishTime:867CB
+
+task:262	startTime:876	finishTime:907BC
+
+task:144	startTime:914	finishTime:944CA
+
+task:26	startTime:956	finishTime:1009AB
+
+task:269	startTime:1016	finishTime:1047BC
+
+task:151	startTime:1054	finishTime:1084CA
+
+task:113	startTime:1086	finishTime:1116AC
+
+task:314	startTime:1116	finishTime:1147CB
+
+task:276	startTime:1156	finishTime:1183BC
+
+task:157	startTime:1214	finishTime:1240CA
+
+task:198	startTime:1275	finishTime:1300AD
+----Worker 40's task(s)----
+
+workerTimeSum=342
+UnderTime = 138
+IdleTime = 75
+Cost=183
+task:420	startTime:836	finishTime:877AB
+
+task:263	startTime:896	finishTime:927BC
+
+task:746	startTime:943	finishTime:1000CE
+
+task:389	startTime:1003	finishTime:1077EC
+
+task:553	startTime:1094	finishTime:1117CA
+
+task:595	startTime:1135	finishTime:1157AD
+
+task:636	startTime:1159	finishTime:1178DA
+----Worker 41's task(s)----
+
+workerTimeSum=478
+UnderTime = 2
+IdleTime = 213
+Cost=185
+task:25	startTime:936	finishTime:989AB
+
+task:469	startTime:1002	finishTime:1043BA
+
+task:431	startTime:1056	finishTime:1097AB
+
+task:474	startTime:1102	finishTime:1143BA
+
+task:436	startTime:1156	finishTime:1191AB
+
+task:840	startTime:1282	finishTime:1317BF
+
+task:900	startTime:1395	finishTime:1414FD
+----Worker 42's task(s)----
+
+workerTimeSum=469
+UnderTime = 11
+IdleTime = 158
+Cost=139
+task:387	startTime:963	finishTime:1037EC
+
+task:351	startTime:1043	finishTime:1117CE
+
+task:395	startTime:1123	finishTime:1197EC
+
+task:558	startTime:1274	finishTime:1294CA
+
+task:519	startTime:1326	finishTime:1346AC
+
+task:980	startTime:1383	finishTime:1432CM
+----Worker 43's task(s)----
+
+workerTimeSum=468
+UnderTime = 12
+IdleTime = 173
+Cost=155
+task:787	startTime:963	finishTime:1020EC
+
+task:350	startTime:1023	finishTime:1097CE
+
+task:394	startTime:1103	finishTime:1177EC
+
+task:717	startTime:1216	finishTime:1236CB
+
+task:478	startTime:1262	finishTime:1297BA
+
+task:440	startTime:1396	finishTime:1431AB
+----Worker 44's task(s)----
+
+workerTimeSum=474
+UnderTime = 6
+IdleTime = 122
+Cost=98
+task:187	startTime:975	finishTime:1003AD
+
+task:629	startTime:1019	finishTime:1041DA
+
+task:111	startTime:1046	finishTime:1076AC
+
+task:312	startTime:1076	finishTime:1107CB
+
+task:274	startTime:1116	finishTime:1147BC
+
+task:156	startTime:1154	finishTime:1180CA
+
+task:517	startTime:1206	finishTime:1226AC
+
+task:758	startTime:1263	finishTime:1312CE
+
+task:799	startTime:1323	finishTime:1372EC
+
+task:360	startTime:1383	finishTime:1449CE
+----Worker 45's task(s)----
+
+workerTimeSum=454
+UnderTime = 26
+IdleTime = 170
+Cost=166
+task:587	startTime:975	finishTime:997AD
+
+task:228	startTime:999	finishTime:1027DA
+
+task:590	startTime:1035	finishTime:1057AD
+
+task:231	startTime:1059	finishTime:1087DA
+
+task:193	startTime:1095	finishTime:1123AD
+
+task:635	startTime:1139	finishTime:1161DA
+
+task:37	startTime:1216	finishTime:1263AB
+
+task:678	startTime:1276	finishTime:1296BC
+
+task:719	startTime:1336	finishTime:1356CB
+
+task:80	startTime:1382	finishTime:1429BA
+----Worker 46's task(s)----
+
+workerTimeSum=456
+UnderTime = 24
+IdleTime = 177
+Cost=171
+task:27	startTime:976	finishTime:1029AB
+
+task:270	startTime:1036	finishTime:1067BC
+
+task:152	startTime:1074	finishTime:1104CA
+
+task:514	startTime:1106	finishTime:1129AC
+
+task:555	startTime:1134	finishTime:1157CA
+
+task:597	startTime:1215	finishTime:1234AD
+
+task:238	startTime:1279	finishTime:1304DA
+
+task:119	startTime:1326	finishTime:1352AC
+
+task:760	startTime:1383	finishTime:1432CE
+----Worker 47's task(s)----
+
+workerTimeSum=457
+UnderTime = 23
+IdleTime = 134
+Cost=127
+task:107	startTime:966	finishTime:996AC
+
+task:708	startTime:996	finishTime:1020CB
+
+task:70	startTime:1022	finishTime:1075BA
+
+task:592	startTime:1075	finishTime:1097AD
+
+task:633	startTime:1099	finishTime:1121DA
+
+task:115	startTime:1126	finishTime:1156AC
+
+task:316	startTime:1156	finishTime:1183CB
+
+task:277	startTime:1216	finishTime:1243BC
+
+task:158	startTime:1274	finishTime:1300CA
+
+task:439	startTime:1336	finishTime:1371AB
+
+task:280	startTime:1396	finishTime:1423BC
+----Worker 48's task(s)----
+
+workerTimeSum=467
+UnderTime = 13
+IdleTime = 191
+Cost=174
+task:667	startTime:976	finishTime:1000BC
+
+task:309	startTime:1016	finishTime:1047CB
+
+task:271	startTime:1056	finishTime:1087BC
+
+task:153	startTime:1094	finishTime:1124CA
+
+task:515	startTime:1126	finishTime:1149AC
+
+task:556	startTime:1154	finishTime:1174CA
+
+task:438	startTime:1276	finishTime:1311AB
+
+task:479	startTime:1322	finishTime:1357BA
+
+task:40	startTime:1396	finishTime:1443AB
+----Worker 49's task(s)----
+
+workerTimeSum=480
+UnderTime = 0
+IdleTime = 165
+Cost=135
+task:265	startTime:936	finishTime:967BC
+
+task:707	startTime:976	finishTime:1000CB
+
+task:835	startTime:1002	finishTime:1043BF
+
+task:816	startTime:1056	finishTime:1097FB
+
+task:74	startTime:1102	finishTime:1155BA
+
+task:596	startTime:1155	finishTime:1174AD
+
+task:637	startTime:1219	finishTime:1238DA
+
+task:38	startTime:1276	finishTime:1323AB
+
+task:679	startTime:1336	finishTime:1356BC
+
+task:720	startTime:1396	finishTime:1416CB
+----Worker 50's task(s)----
+
+workerTimeSum=473
+UnderTime = 7
+IdleTime = 86
+Cost=63
+task:814	startTime:976	finishTime:1017FB
+
+task:470	startTime:1022	finishTime:1063BA
+
+task:112	startTime:1066	finishTime:1096AC
+
+task:313	startTime:1096	finishTime:1127CB
+
+task:275	startTime:1136	finishTime:1167BC
+
+task:757	startTime:1203	finishTime:1252CE
+
+task:798	startTime:1263	finishTime:1312EC
+
+task:759	startTime:1323	finishTime:1372CE
+
+task:400	startTime:1383	finishTime:1449EC
+----Worker 51's task(s)----
+
+workerTimeSum=476
+UnderTime = 4
+IdleTime = 138
+Cost=112
+task:426	startTime:956	finishTime:997AB
+
+task:69	startTime:1002	finishTime:1055BA
+
+task:591	startTime:1055	finishTime:1077AD
+
+task:232	startTime:1079	finishTime:1107DA
+
+task:194	startTime:1115	finishTime:1143AD
+
+task:236	startTime:1159	finishTime:1184DA
+
+task:117	startTime:1206	finishTime:1232AC
+
+task:358	startTime:1263	finishTime:1329CE
+
+task:800	startTime:1383	finishTime:1432EC
+----Worker 52's task(s)----
+
+workerTimeSum=468
+UnderTime = 12
+IdleTime = 274
+Cost=256
+task:586	startTime:955	finishTime:977AD
+
+task:627	startTime:979	finishTime:1001DA
+
+task:509	startTime:1006	finishTime:1029AC
+
+task:550	startTime:1034	finishTime:1057CA
+
+task:32	startTime:1076	finishTime:1129AB
+
+task:675	startTime:1136	finishTime:1160BC
+
+task:320	startTime:1396	finishTime:1423CB
+----Worker 53's task(s)----
+
+workerTimeSum=479
+UnderTime = 1
+IdleTime = 210
+Cost=181
+task:185	startTime:935	finishTime:963AD
+
+task:914	startTime:979	finishTime:1001DF
+
+task:855	startTime:1026	finishTime:1049FC
+
+task:551	startTime:1054	finishTime:1077CA
+
+task:513	startTime:1086	finishTime:1109AC
+
+task:554	startTime:1114	finishTime:1137CA
+
+task:36	startTime:1156	finishTime:1203AB
+
+task:677	startTime:1216	finishTime:1236BC
+
+task:718	startTime:1276	finishTime:1296CB
+
+task:940	startTime:1296	finishTime:1316BC
+
+task:880	startTime:1394	finishTime:1414CF
+----Worker 54's task(s)----
+
+workerTimeSum=480
+UnderTime = 0
+IdleTime = 165
+Cost=135
+task:813	startTime:936	finishTime:977FB
+
+task:468	startTime:982	finishTime:1023BA
+
+task:110	startTime:1026	finishTime:1056AC
+
+task:311	startTime:1056	finishTime:1087CB
+
+task:273	startTime:1096	finishTime:1127BC
+
+task:155	startTime:1134	finishTime:1164CA
+
+task:197	startTime:1215	finishTime:1240AD
+
+task:638	startTime:1279	finishTime:1298DA
+
+task:39	startTime:1336	finishTime:1383AB
+
+task:680	startTime:1396	finishTime:1416BC
+----Worker 55's task(s)----
+
+workerTimeSum=343
+UnderTime = 137
+IdleTime = 84
+Cost=191
+task:850	startTime:826	finishTime:849FC
+
+task:141	startTime:854	finishTime:884CA
+
+task:23	startTime:896	finishTime:949AB
+
+task:934	startTime:976	finishTime:1000BC
+
+task:149	startTime:1014	finishTime:1044CA
+
+task:511	startTime:1046	finishTime:1069AC
+
+task:552	startTime:1074	finishTime:1097CA
+
+task:34	startTime:1116	finishTime:1169AB
+----Worker 56's task(s)----
+
+workerTimeSum=335
+UnderTime = 145
+IdleTime = 29
+Cost=144
+task:460	startTime:822	finishTime:863BA
+
+task:22	startTime:876	finishTime:929AB
+
+task:665	startTime:936	finishTime:960BC
+
+task:747	startTime:963	finishTime:1020CE
+
+task:790	startTime:1023	finishTime:1080EC
+
+task:353	startTime:1083	finishTime:1157CE
+----Worker 57's task(s)----
+
+workerTimeSum=412
+UnderTime = 68
+IdleTime = 182
+Cost=220
+task:142	startTime:874	finishTime:904CA
+
+task:584	startTime:915	finishTime:937AD
+
+task:628	startTime:999	finishTime:1021DA
+
+task:30	startTime:1036	finishTime:1089AB
+
+task:673	startTime:1096	finishTime:1120BC
+
+task:715	startTime:1136	finishTime:1160CB
+
+task:839	startTime:1162	finishTime:1197BF
+
+task:859	startTime:1266	finishTime:1286FC
+----Worker 58's task(s)----
+
+workerTimeSum=527
+OverTime = 47
+IdleTime = 279
+Cost=296
+task:222	startTime:879	finishTime:907DA
+
+task:188	startTime:995	finishTime:1023AD
+
+task:230	startTime:1039	finishTime:1067DA
+
+task:192	startTime:1075	finishTime:1103AD
+
+task:234	startTime:1119	finishTime:1147DA
+
+task:196	startTime:1155	finishTime:1180AD
+
+task:237	startTime:1219	finishTime:1244DA
+
+task:598	startTime:1275	finishTime:1294AD
+
+task:920	startTime:1299	finishTime:1318DF
+
+task:860	startTime:1386	finishTime:1406FC
+----Worker 59's task(s)----
+
+workerTimeSum=453
+UnderTime = 27
+IdleTime = 109
+Cost=106
+task:930	startTime:816	finishTime:840BC
+
+task:741	startTime:843	finishTime:900CE
+
+task:784	startTime:903	finishTime:960EC
+
+task:307	startTime:976	finishTime:1007CB
+
+task:935	startTime:1016	finishTime:1040BC
+
+task:711	startTime:1056	finishTime:1080CB
+
+task:837	startTime:1082	finishTime:1123BF
+
+task:858	startTime:1146	finishTime:1166FC
+
+task:357	startTime:1203	finishTime:1269CE
+----Worker 60's task(s)----
+
+workerTimeSum=407
+UnderTime = 73
+IdleTime = 122
+Cost=165
+task:929	startTime:756	finishTime:778BC
+
+task:138	startTime:794	finishTime:824CA
+
+task:104	startTime:906	finishTime:936AC
+
+task:953	startTime:936	finishTime:960CB
+
+task:67	startTime:962	finishTime:1015BA
+
+task:589	startTime:1015	finishTime:1037AD
+
+task:630	startTime:1039	finishTime:1061DA
+
+task:432	startTime:1076	finishTime:1117AB
+
+task:475	startTime:1122	finishTime:1163BA
+----Worker 61's task(s)----
+
+workerTimeSum=478
+UnderTime = 2
+IdleTime = 159
+Cost=131
+task:106	startTime:946	finishTime:976AC
+
+task:974	startTime:983	finishTime:1040CM
+
+task:996	startTime:1063	finishTime:1120MC
+
+task:315	startTime:1136	finishTime:1167CB
+
+task:939	startTime:1176	finishTime:1196BC
+
+task:317	startTime:1216	finishTime:1243CB
+
+task:78	startTime:1262	finishTime:1309BA
+
+task:199	startTime:1335	finishTime:1360AD
+
+task:240	startTime:1399	finishTime:1424DA
+----Worker 62's task(s)----
+
+workerTimeSum=462
+UnderTime = 18
+IdleTime = 238
+Cost=226
+task:186	startTime:955	finishTime:983AD
+
+task:916	startTime:1059	finishTime:1081DF
+
+task:897	startTime:1115	finishTime:1137FD
+
+task:235	startTime:1139	finishTime:1167DA
+
+task:437	startTime:1216	finishTime:1251AB
+
+task:278	startTime:1276	finishTime:1303BC
+
+task:319	startTime:1336	finishTime:1363CB
+
+task:480	startTime:1382	finishTime:1417BA
+----Worker 63's task(s)----
+
+workerTimeSum=594
+OverTime = 114
+IdleTime = 119
+Cost=203
+task:982	startTime:423	finishTime:484MC
+
+task:328	startTime:503	finishTime:588CE
+
+task:372	startTime:603	finishTime:674EC
+
+task:534	startTime:674	finishTime:695CA
+
+task:95	startTime:696	finishTime:724AC
+
+task:868	startTime:734	finishTime:755CF
+
+task:809	startTime:756	finishTime:794FB
+
+task:59	startTime:802	finishTime:855BA
+
+task:181	startTime:855	finishTime:883AD
+
+task:223	startTime:899	finishTime:927DA
+
+task:427	startTime:976	finishTime:1017AB
+----Worker 64's task(s)----
+
+workerTimeSum=365
+UnderTime = 115
+IdleTime = 66
+Cost=151
+task:18	startTime:796	finishTime:849AB
+
+task:261	startTime:856	finishTime:887BC
+
+task:703	startTime:896	finishTime:920CB
+
+task:65	startTime:922	finishTime:975BA
+
+task:429	startTime:1016	finishTime:1057AB
+
+task:72	startTime:1062	finishTime:1115BA
+
+task:594	startTime:1115	finishTime:1137AD
+
+task:918	startTime:1139	finishTime:1161DF
+----Worker 65's task(s)----
+
+workerTimeSum=403
+UnderTime = 77
+IdleTime = 71
+Cost=118
+task:140	startTime:834	finishTime:864CA
+
+task:102	startTime:866	finishTime:896AC
+
+task:344	startTime:903	finishTime:977CE
+
+task:788	startTime:983	finishTime:1040EC
+
+task:956	startTime:1056	finishTime:1080CB
+
+task:473	startTime:1082	finishTime:1123BA
+
+task:435	startTime:1136	finishTime:1177AB
+
+task:477	startTime:1202	finishTime:1237BA
+----Worker 66's task(s)----
+
+workerTimeSum=357
+UnderTime = 123
+IdleTime = 64
+Cost=157
+task:780	startTime:823	finishTime:880EC
+
+task:743	startTime:883	finishTime:940CE
+
+task:386	startTime:943	finishTime:1017EC
+
+task:710	startTime:1036	finishTime:1060CB
+
+task:937	startTime:1096	finishTime:1120BC
+
+task:755	startTime:1123	finishTime:1180CE
+----Worker 67's task(s)----
+
+workerTimeSum=460
+UnderTime = 20
+IdleTime = 72
+Cost=62
+task:641	startTime:376	finishTime:401BC
+
+task:323	startTime:403	finishTime:488CE
+
+task:368	startTime:503	finishTime:588EC
+
+task:332	startTime:603	finishTime:674CE
+
+task:375	startTime:693	finishTime:764EC
+
+task:537	startTime:764	finishTime:785CA
+
+task:99	startTime:806	finishTime:836AC
+----Worker 68's task(s)----
+
+workerTimeSum=473
+UnderTime = 7
+IdleTime = 129
+Cost=106
+task:921	startTime:376	finishTime:401BC
+
+task:942	startTime:416	finishTime:441CB
+
+task:645	startTime:456	finishTime:481BC
+
+task:327	startTime:483	finishTime:568CE
+
+task:771	startTime:573	finishTime:627EC
+
+task:693	startTime:646	finishTime:668CB
+
+task:928	startTime:696	finishTime:718BC
+
+task:696	startTime:736	finishTime:758CB
+
+task:458	startTime:782	finishTime:823BA
+
+task:500	startTime:826	finishTime:849AC
+----Worker 69's task(s)----
+
+workerTimeSum=451
+UnderTime = 29
+IdleTime = 154
+Cost=153
+task:580	startTime:835	finishTime:857AD
+
+task:621	startTime:859	finishTime:881DA
+
+task:184	startTime:915	finishTime:943AD
+
+task:626	startTime:959	finishTime:981DA
+
+task:108	startTime:986	finishTime:1016AC
+
+task:955	startTime:1016	finishTime:1040CB
+
+task:836	startTime:1042	finishTime:1083BF
+
+task:817	startTime:1096	finishTime:1137FB
+
+task:76	startTime:1142	finishTime:1189BA
+
+task:518	startTime:1266	finishTime:1286AC
+----Worker 70's task(s)----
+
+workerTimeSum=346
+UnderTime = 134
+IdleTime = 38
+Cost=142
+task:341	startTime:843	finishTime:917CE
+
+task:785	startTime:923	finishTime:980EC
+
+task:148	startTime:994	finishTime:1024CA
+
+task:430	startTime:1036	finishTime:1077AB
+
+task:73	startTime:1082	finishTime:1135BA
+
+task:35	startTime:1136	finishTime:1189AB
+----Worker 71's task(s)----
+
+workerTimeSum=569
+OverTime = 89
+IdleTime = 303
+Cost=362
+task:523	startTime:414	finishTime:438CA
+
+task:405	startTime:456	finishTime:499AB
+
+task:48	startTime:502	finishTime:563BA
+
+task:179	startTime:815	finishTime:843AD
+
+task:221	startTime:859	finishTime:887DA
+
+task:423	startTime:896	finishTime:937AB
+
+task:466	startTime:942	finishTime:983BA
+----Worker 72's task(s)----
+
+workerTimeSum=479
+UnderTime = 1
+IdleTime = 229
+Cost=200
+task:225	startTime:939	finishTime:967DA
+
+task:428	startTime:996	finishTime:1037AB
+
+task:71	startTime:1042	finishTime:1095BA
+
+task:593	startTime:1095	finishTime:1117AD
+
+task:634	startTime:1119	finishTime:1141DA
+
+task:116	startTime:1146	finishTime:1172AC
+
+task:557	startTime:1214	finishTime:1234CA
+
+task:599	startTime:1335	finishTime:1354AD
+
+task:640	startTime:1399	finishTime:1418DA
+----Worker 73's task(s)----
+
+workerTimeSum=478
+UnderTime = 2
+IdleTime = 164
+Cost=136
+task:305	startTime:936	finishTime:967CB
+
+task:267	startTime:976	finishTime:1007BC
+
+task:549	startTime:1014	finishTime:1037CA
+
+task:31	startTime:1056	finishTime:1109AB
+
+task:674	startTime:1116	finishTime:1140BC
+
+task:356	startTime:1143	finishTime:1209CE
+
+task:399	startTime:1323	finishTime:1389EC
+
+task:560	startTime:1394	finishTime:1414CA
+----Worker 74's task(s)----
+
+workerTimeSum=373
+UnderTime = 107
+IdleTime = 102
+Cost=179
+task:739	startTime:803	finishTime:860CE
+
+task:382	startTime:863	finishTime:937EC
+
+task:874	startTime:994	finishTime:1017CF
+
+task:895	startTime:1035	finishTime:1057FD
+
+task:631	startTime:1059	finishTime:1081DA
+
+task:33	startTime:1096	finishTime:1149AB
+
+task:676	startTime:1156	finishTime:1176BC
+----Worker 75's task(s)----
+
+workerTimeSum=593
+OverTime = 113
+IdleTime = 410
+Cost=493
+task:923	startTime:456	finishTime:481BC
+
+task:288	startTime:516	finishTime:551CB
+
+task:662	startTime:876	finishTime:900BC
+
+task:145	startTime:934	finishTime:964CA
+
+task:507	startTime:966	finishTime:989AC
+
+task:548	startTime:994	finishTime:1017CA
+
+task:510	startTime:1026	finishTime:1049AC
+----Worker 76's task(s)----
+
+workerTimeSum=382
+UnderTime = 98
+IdleTime = 102
+Cost=170
+task:578	startTime:795	finishTime:817AD
+
+task:219	startTime:819	finishTime:847DA
+
+task:21	startTime:856	finishTime:909AB
+
+task:465	startTime:922	finishTime:963BA
+
+task:28	startTime:996	finishTime:1049AB
+
+task:671	startTime:1056	finishTime:1080BC
+
+task:714	startTime:1116	finishTime:1140CB
+
+task:476	startTime:1142	finishTime:1177BA
+----Worker 77's task(s)----
+
+workerTimeSum=544
+OverTime = 64
+IdleTime = 145
+Cost=179
+task:642	startTime:396	finishTime:421BC
+
+task:724	startTime:423	finishTime:484CE
+
+task:768	startTime:503	finishTime:564EC
+
+task:291	startTime:586	finishTime:616CB
+
+task:827	startTime:622	finishTime:660BF
+
+task:887	startTime:675	finishTime:695FD
+
+task:215	startTime:709	finishTime:736DA
+
+task:16	startTime:736	finishTime:787AB
+
+task:258	startTime:796	finishTime:827BC
+
+task:302	startTime:876	finishTime:907CB
+
+task:664	startTime:916	finishTime:940BC
+----Worker 78's task(s)----
+
+workerTimeSum=476
+UnderTime = 4
+IdleTime = 100
+Cost=74
+task:666	startTime:956	finishTime:980BC
+
+task:348	startTime:983	finishTime:1057CE
+
+task:792	startTime:1063	finishTime:1120EC
+
+task:355	startTime:1123	finishTime:1197CE
+
+task:797	startTime:1203	finishTime:1252EC
+
+task:979	startTime:1263	finishTime:1312CM
+
+task:1000	startTime:1383	finishTime:1432MC
+----Worker 79's task(s)----
+
+workerTimeSum=480
+UnderTime = 0
+IdleTime = 164
+Cost=134
+task:505	startTime:926	finishTime:949AC
+
+task:146	startTime:954	finishTime:984CA
+
+task:29	startTime:1016	finishTime:1069AB
+
+task:672	startTime:1076	finishTime:1100BC
+
+task:354	startTime:1103	finishTime:1177CE
+
+task:398	startTime:1263	finishTime:1329EC
+
+task:159	startTime:1334	finishTime:1360CA
+
+task:520	startTime:1386	finishTime:1406AC
+----Worker 80's task(s)----
+
+workerTimeSum=474
+UnderTime = 6
+IdleTime = 104
+Cost=80
+task:506	startTime:946	finishTime:969AC
+
+task:954	startTime:976	finishTime:1000CB
+
+task:669	startTime:1016	finishTime:1040BC
+
+task:751	startTime:1043	finishTime:1100CE
+
+task:794	startTime:1103	finishTime:1160EC
+
+task:959	startTime:1176	finishTime:1196CB
+
+task:77	startTime:1202	finishTime:1249BA
+
+task:118	startTime:1266	finishTime:1292AC
+
+task:960	startTime:1296	finishTime:1316CB
+
+task:79	startTime:1322	finishTime:1369BA
+
+task:200	startTime:1395	finishTime:1420AD
+----Worker 81's task(s)----
+
+workerTimeSum=473
+UnderTime = 7
+IdleTime = 185
+Cost=162
+task:220	startTime:839	finishTime:867DA
+
+task:503	startTime:886	finishTime:909AC
+
+task:347	startTime:963	finishTime:1037CE
+
+task:791	startTime:1043	finishTime:1100EC
+
+task:977	startTime:1103	finishTime:1160CM
+
+task:999	startTime:1263	finishTime:1312MC
+----Worker 82's task(s)----
+
+workerTimeSum=340
+UnderTime = 140
+IdleTime = 71
+Cost=181
+task:740	startTime:823	finishTime:880CE
+
+task:783	startTime:883	finishTime:940EC
+
+task:873	startTime:954	finishTime:977CF
+
+task:894	startTime:995	finishTime:1017FD
+
+task:915	startTime:1019	finishTime:1041DF
+
+task:856	startTime:1066	finishTime:1089FC
+
+task:713	startTime:1096	finishTime:1120CB
+
+task:838	startTime:1122	finishTime:1163BF
+----Worker 83's task(s)----
+
+workerTimeSum=586
+OverTime = 106
+IdleTime = 362
+Cost=438
+task:364	startTime:423	finishTime:508EC
+
+task:688	startTime:516	finishTime:541CB
+
+task:650	startTime:556	finishTime:578BC
+
+task:542	startTime:874	finishTime:897CA
+
+task:504	startTime:906	finishTime:929AC
+
+task:546	startTime:954	finishTime:977CA
+
+task:508	startTime:986	finishTime:1009AC
+----Worker 84's task(s)----
+
+workerTimeSum=465
+UnderTime = 15
+IdleTime = 109
+Cost=94
+task:561	startTime:375	finishTime:398AD
+
+task:202	startTime:399	finishTime:431DA
+
+task:164	startTime:435	finishTime:467AD
+
+task:206	startTime:479	finishTime:511DA
+
+task:568	startTime:515	finishTime:538AD
+
+task:609	startTime:539	finishTime:562DA
+
+task:492	startTime:606	finishTime:627AC
+
+task:533	startTime:644	finishTime:665CA
+
+task:494	startTime:666	finishTime:687AC
+
+task:335	startTime:693	finishTime:764CE
+
+task:778	startTime:783	finishTime:840EC
+----Worker 85's task(s)----
+
+workerTimeSum=447
+UnderTime = 33
+IdleTime = 158
+Cost=161
+task:301	startTime:856	finishTime:887CB
+
+task:663	startTime:896	finishTime:920BC
+
+task:705	startTime:936	finishTime:960CB
+
+task:467	startTime:962	finishTime:1003BA
+
+task:109	startTime:1006	finishTime:1036AC
+
+task:310	startTime:1036	finishTime:1067CB
+
+task:272	startTime:1076	finishTime:1107BC
+
+task:154	startTime:1114	finishTime:1144CA
+
+task:516	startTime:1146	finishTime:1166AC
+
+task:318	startTime:1276	finishTime:1303CB
+----Worker 86's task(s)----
+
+workerTimeSum=375
+UnderTime = 105
+IdleTime = 58
+Cost=133
+task:540	startTime:834	finishTime:857CA
+
+task:502	startTime:866	finishTime:889AC
+
+task:744	startTime:903	finishTime:960CE
+
+task:388	startTime:983	finishTime:1057EC
+
+task:352	startTime:1063	finishTime:1137CE
+
+task:396	startTime:1143	finishTime:1209EC
+----Worker 87's task(s)----
+
+workerTimeSum=566
+OverTime = 86
+IdleTime = 120
+Cost=176
+task:122	startTime:394	finishTime:428CA
+
+task:4	startTime:436	finishTime:497AB
+
+task:448	startTime:502	finishTime:545BA
+
+task:10	startTime:556	finishTime:607AB
+
+task:53	startTime:632	finishTime:683BA
+
+task:495	startTime:696	finishTime:717AC
+
+task:736	startTime:723	finishTime:777CE
+
+task:380	startTime:823	finishTime:897EC
+
+task:972	startTime:903	finishTime:960CM
+----Worker 88's task(s)----
+
+workerTimeSum=358
+UnderTime = 122
+IdleTime = 75
+Cost=167
+task:870	startTime:834	finishTime:857CF
+
+task:851	startTime:866	finishTime:889FC
+
+task:345	startTime:923	finishTime:997CE
+
+task:789	startTime:1003	finishTime:1060EC
+
+task:976	startTime:1063	finishTime:1120CM
+
+task:998	startTime:1143	finishTime:1192MC
+----Worker 89's task(s)----
+
+workerTimeSum=357
+UnderTime = 123
+IdleTime = 40
+Cost=133
+task:340	startTime:823	finishTime:897CE
+
+task:384	startTime:903	finishTime:977EC
+
+task:308	startTime:996	finishTime:1027CB
+
+task:670	startTime:1036	finishTime:1060BC
+
+task:752	startTime:1063	finishTime:1120CE
+
+task:795	startTime:1123	finishTime:1180EC
+----Worker 90's task(s)----
+
+workerTimeSum=504
+OverTime = 24
+IdleTime = 64
+Cost=58
+task:643	startTime:416	finishTime:441BC
+
+task:325	startTime:443	finishTime:528CE
+
+task:770	startTime:543	finishTime:597EC
+
+task:966	startTime:603	finishTime:657CM
+
+task:987	startTime:663	finishTime:717MC
+
+task:968	startTime:723	finishTime:777CM
+
+task:989	startTime:783	finishTime:840MC
+
+task:971	startTime:863	finishTime:920CM
+----Worker 91's task(s)----
+
+workerTimeSum=458
+UnderTime = 22
+IdleTime = 265
+Cost=257
+task:706	startTime:956	finishTime:980CB
+
+task:936	startTime:1056	finishTime:1080BC
+
+task:753	startTime:1083	finishTime:1140CE
+
+task:796	startTime:1143	finishTime:1192EC
+
+task:559	startTime:1334	finishTime:1354CA
+
+task:600	startTime:1395	finishTime:1414AD
+----Worker 92's task(s)----
+
+workerTimeSum=344
+UnderTime = 136
+IdleTime = 146
+Cost=252
+task:419	startTime:816	finishTime:857AB
+
+task:68	startTime:982	finishTime:1035BA
+
+task:190	startTime:1035	finishTime:1063AD
+
+task:632	startTime:1079	finishTime:1101DA
+
+task:114	startTime:1106	finishTime:1136AC
+
+task:958	startTime:1136	finishTime:1160CB
+----Worker 93's task(s)----
+
+workerTimeSum=355
+UnderTime = 125
+IdleTime = 47
+Cost=142
+task:931	startTime:856	finishTime:880BC
+
+task:143	startTime:894	finishTime:924CA
+
+task:105	startTime:926	finishTime:956AC
+
+task:306	startTime:956	finishTime:987CB
+
+task:668	startTime:996	finishTime:1020BC
+
+task:750	startTime:1023	finishTime:1080CE
+
+task:793	startTime:1083	finishTime:1140EC
+
+task:878	startTime:1154	finishTime:1174CF
+
+task:819	startTime:1176	finishTime:1211FB
+----Worker 94's task(s)----
+
+workerTimeSum=527
+OverTime = 47
+IdleTime = 205
+Cost=222
+task:682	startTime:396	finishTime:421CB
+
+task:644	startTime:436	finishTime:461BC
+
+task:326	startTime:463	finishTime:548CE
+
+task:371	startTime:573	finishTime:644EC
+
+task:133	startTime:644	finishTime:672CA
+
+task:499	startTime:806	finishTime:829AC
+
+task:951	startTime:856	finishTime:880CB
+
+task:832	startTime:882	finishTime:923BF
+----Worker 95's task(s)----
+
+workerTimeSum=500
+OverTime = 20
+IdleTime = 92
+Cost=82
+task:764	startTime:423	finishTime:484EC
+
+task:944	startTime:496	finishTime:521CB
+
+task:249	startTime:536	finishTime:571BC
+
+task:131	startTime:584	finishTime:612CA
+
+task:412	startTime:616	finishTime:654AB
+
+task:454	startTime:662	finishTime:700BA
+
+task:415	startTime:706	finishTime:744AB
+
+task:57	startTime:752	finishTime:803BA
+
+task:19	startTime:816	finishTime:869AB
+
+task:463	startTime:882	finishTime:923BA
+----Worker 96's task(s)----
+
+workerTimeSum=469
+UnderTime = 11
+IdleTime = 262
+Cost=243
+task:973	startTime:943	finishTime:1000CM
+
+task:995	startTime:1023	finishTime:1080MC
+
+task:877	startTime:1114	finishTime:1137CF
+
+task:898	startTime:1155	finishTime:1174FD
+
+task:239	startTime:1339	finishTime:1364DA
+
+task:120	startTime:1386	finishTime:1412AC
+----Worker 97's task(s)----
+
+workerTimeSum=470
+UnderTime = 10
+IdleTime = 153
+Cost=133
+task:521	startTime:374	finishTime:398CA
+
+task:83	startTime:406	finishTime:440AC
+
+task:725	startTime:443	finishTime:504CE
+
+task:369	startTime:523	finishTime:608EC
+
+task:692	startTime:616	finishTime:638CB
+
+task:455	startTime:692	finishTime:730BA
+
+task:498	startTime:786	finishTime:809AC
+
+task:139	startTime:814	finishTime:844CA
+----Worker 98's task(s)----
+
+workerTimeSum=506
+OverTime = 26
+IdleTime = 163
+Cost=159
+task:522	startTime:394	finishTime:418CA
+
+task:564	startTime:435	finishTime:458AD
+
+task:605	startTime:459	finishTime:482DA
+
+task:487	startTime:486	finishTime:510AC
+
+task:128	startTime:514	finishTime:548CA
+
+task:570	startTime:555	finishTime:575AD
+
+task:906	startTime:579	finishTime:599DF
+
+task:886	startTime:615	finishTime:635FD
+
+task:907	startTime:639	finishTime:659DF
+
+task:847	startTime:666	finishTime:687FC
+
+task:135	startTime:704	finishTime:732CA
+
+task:416	startTime:736	finishTime:774AB
+
+task:659	startTime:816	finishTime:840BC
+
+task:702	startTime:876	finishTime:900CB
+----Worker 99's task(s)----
+
+workerTimeSum=553
+OverTime = 73
+IdleTime = 184
+Cost=227
+task:861	startTime:394	finishTime:418CF
+
+task:882	startTime:435	finishTime:458FD
+
+task:205	startTime:459	finishTime:491DA
+
+task:167	startTime:495	finishTime:527AD
+
+task:209	startTime:539	finishTime:571DA
+
+task:11	startTime:586	finishTime:637AB
+
+task:653	startTime:646	finishTime:668BC
+
+task:294	startTime:676	finishTime:706CB
+
+task:56	startTime:722	finishTime:773BA
+
+task:418	startTime:796	finishTime:837AB
+
+task:264	startTime:916	finishTime:947BC
+----Worker 100's task(s)----
+
+workerTimeSum=525
+OverTime = 45
+IdleTime = 370
+Cost=385
+task:562	startTime:395	finishTime:418AD
+
+task:203	startTime:419	finishTime:451DA
+
+task:165	startTime:455	finishTime:487AD
+
+task:904	startTime:499	finishTime:522DF
+
+task:845	startTime:546	finishTime:567FC
+
+task:952	startTime:896	finishTime:920CB
+----Worker 101's task(s)----
+
+workerTimeSum=372
+UnderTime = 108
+IdleTime = 54
+Cost=132
+task:779	startTime:803	finishTime:860EC
+
+task:742	startTime:863	finishTime:920CE
+
+task:385	startTime:923	finishTime:997EC
+
+task:150	startTime:1034	finishTime:1064CA
+
+task:512	startTime:1066	finishTime:1089AC
+
+task:957	startTime:1096	finishTime:1120CB
+
+task:75	startTime:1122	finishTime:1175BA
+----Worker 102's task(s)----
+
+workerTimeSum=475
+UnderTime = 5
+IdleTime = 190
+Cost=165
+task:442	startTime:382	finishTime:425BA
+
+task:484	startTime:426	finishTime:450AC
+
+task:525	startTime:454	finishTime:478CA
+
+task:7	startTime:496	finishTime:557AB
+
+task:826	startTime:562	finishTime:600BF
+
+task:846	startTime:606	finishTime:627FC
+
+task:338	startTime:783	finishTime:857CE
+----Worker 103's task(s)----
+
+workerTimeSum=340
+UnderTime = 140
+IdleTime = 125
+Cost=235
+task:700	startTime:836	finishTime:860CB
+
+task:462	startTime:862	finishTime:903BA
+
+task:24	startTime:916	finishTime:969AB
+
+task:268	startTime:996	finishTime:1027BC
+
+task:876	startTime:1074	finishTime:1097CF
+
+task:857	startTime:1106	finishTime:1129FC
+
+task:716	startTime:1156	finishTime:1176CB
+----Worker 104's task(s)----
+
+workerTimeSum=594
+OverTime = 114
+IdleTime = 286
+Cost=370
+task:324	startTime:423	finishTime:508CE
+
+task:769	startTime:523	finishTime:584EC
+
+task:950	startTime:816	finishTime:840CB
+
+task:831	startTime:842	finishTime:883BF
+
+task:852	startTime:906	finishTime:929FC
+
+task:346	startTime:943	finishTime:1017CE
+----Worker 105's task(s)----
+
+workerTimeSum=555
+OverTime = 75
+IdleTime = 103
+Cost=148
+task:82	startTime:386	finishTime:420AC
+
+task:124	startTime:434	finishTime:468CA
+
+task:566	startTime:475	finishTime:498AD
+
+task:207	startTime:499	finishTime:531DA
+
+task:409	startTime:536	finishTime:579AB
+
+task:252	startTime:616	finishTime:646BC
+
+task:293	startTime:646	finishTime:676CB
+
+task:654	startTime:676	finishTime:698BC
+
+task:695	startTime:706	finishTime:728CB
+
+task:829	startTime:742	finishTime:780BF
+
+task:849	startTime:786	finishTime:809FC
+
+task:699	startTime:816	finishTime:840CB
+
+task:61	startTime:842	finishTime:895BA
+
+task:583	startTime:895	finishTime:917AD
+
+task:624	startTime:919	finishTime:941DA
+----Worker 106's task(s)----
+
+workerTimeSum=245
+UnderTime = 235
+IdleTime = 54
+Cost=259
+task:761	startTime:363	finishTime:424EC
+
+task:862	startTime:434	finishTime:458CF
+
+task:843	startTime:466	finishTime:490FC
+
+task:287	startTime:496	finishTime:531CB
+
+task:925	startTime:536	finishTime:561BC
+
+task:691	startTime:586	finishTime:608CB
+----Worker 107's task(s)----
+
+workerTimeSum=478
+UnderTime = 2
+IdleTime = 173
+Cost=145
+task:201	startTime:379	finishTime:411DA
+
+task:163	startTime:415	finishTime:447AD
+
+task:903	startTime:459	finishTime:482DF
+
+task:804	startTime:496	finishTime:539FB
+
+task:250	startTime:556	finishTime:586BC
+
+task:333	startTime:633	finishTime:704CE
+
+task:378	startTime:783	finishTime:857EC
+----Worker 108's task(s)----
+
+workerTimeSum=301
+UnderTime = 179
+IdleTime = 89
+Cost=238
+task:661	startTime:856	finishTime:880BC
+
+task:704	startTime:916	finishTime:940CB
+
+task:834	startTime:962	finishTime:1003BF
+
+task:815	startTime:1016	finishTime:1057FB
+
+task:472	startTime:1062	finishTime:1103BA
+
+task:434	startTime:1116	finishTime:1157AB
+----Worker 109's task(s)----
+
+workerTimeSum=341
+UnderTime = 139
+IdleTime = 78
+Cost=187
+task:660	startTime:836	finishTime:860BC
+
+task:342	startTime:863	finishTime:937CE
+
+task:786	startTime:943	finishTime:1000EC
+
+task:875	startTime:1034	finishTime:1057CF
+
+task:896	startTime:1075	finishTime:1097FD
+
+task:917	startTime:1099	finishTime:1121DF
+
+task:818	startTime:1136	finishTime:1177FB
+----Worker 110's task(s)----
+
+workerTimeSum=541
+OverTime = 61
+IdleTime = 364
+Cost=395
+task:482	startTime:386	finishTime:410AC
+
+task:962	startTime:423	finishTime:484CM
+
+task:984	startTime:503	finishTime:564MC
+
+task:303	startTime:896	finishTime:927CB
+----Worker 111's task(s)----
+
+workerTimeSum=297
+UnderTime = 183
+IdleTime = 126
+Cost=279
+task:991	startTime:863	finishTime:920MC
+
+task:975	startTime:1023	finishTime:1080CM
+
+task:997	startTime:1103	finishTime:1160MC
+----Worker 112's task(s)----
+
+workerTimeSum=354
+UnderTime = 126
+IdleTime = 58
+Cost=154
+task:339	startTime:803	finishTime:877CE
+
+task:383	startTime:883	finishTime:957EC
+
+task:349	startTime:1003	finishTime:1077CE
+
+task:393	startTime:1083	finishTime:1157EC
+----Worker 113's task(s)----
+
+workerTimeSum=406
+UnderTime = 74
+IdleTime = 235
+Cost=279
+task:994	startTime:983	finishTime:1040MC
+
+task:712	startTime:1076	finishTime:1100CB
+
+task:938	startTime:1136	finishTime:1160BC
+
+task:359	startTime:1323	finishTime:1389CE
+----Worker 114's task(s)----
+
+workerTimeSum=329
+UnderTime = 151
+IdleTime = 92
+Cost=213
+task:782	startTime:863	finishTime:920EC
+
+task:748	startTime:983	finishTime:1040CE
+
+task:391	startTime:1043	finishTime:1117EC
+
+task:978	startTime:1143	finishTime:1192CM
+----Worker 115's task(s)----
+
+workerTimeSum=169
+UnderTime = 311
+IdleTime = 19
+Cost=300
+task:161	startTime:375	finishTime:407AD
+
+task:603	startTime:419	finishTime:442DA
+
+task:85	startTime:446	finishTime:480AC
+
+task:727	startTime:483	finishTime:544CE
+----Worker 116's task(s)----
+
+workerTimeSum=294
+UnderTime = 186
+IdleTime = 114
+Cost=270
+task:381	startTime:843	finishTime:917EC
+
+task:709	startTime:1016	finishTime:1040CB
+
+task:471	startTime:1042	finishTime:1083BA
+
+task:433	startTime:1096	finishTime:1137AB
+----Worker 117's task(s)----
+
+workerTimeSum=357
+UnderTime = 123
+IdleTime = 78
+Cost=171
+task:379	startTime:803	finishTime:877EC
+
+task:343	startTime:883	finishTime:957CE
+
+task:390	startTime:1023	finishTime:1097EC
+
+task:754	startTime:1103	finishTime:1160CE
+----Worker 118's task(s)----
+
+workerTimeSum=231
+UnderTime = 249
+IdleTime = 26
+Cost=245
+task:322	startTime:383	finishTime:468CE
+
+task:767	startTime:483	finishTime:544EC
+
+task:865	startTime:554	finishTime:575CF
+
+task:806	startTime:576	finishTime:614FB
+----Worker 119's task(s)----
+
+workerTimeSum=191
+UnderTime = 289
+IdleTime = 16
+Cost=275
+task:121	startTime:374	finishTime:408CA
+
+task:563	startTime:415	finishTime:438AD
+
+task:204	startTime:439	finishTime:471DA
+
+task:406	startTime:476	finishTime:519AB
+
+task:449	startTime:522	finishTime:565BA
+----Worker 120's task(s)----
+
+workerTimeSum=202
+UnderTime = 278
+IdleTime = 16
+Cost=264
+task:441	startTime:362	finishTime:405BA
+
+task:483	startTime:406	finishTime:430AC
+
+task:524	startTime:434	finishTime:458CA
+
+task:86	startTime:466	finishTime:500AC
+
+task:728	startTime:503	finishTime:564CE
+----Worker 121's task(s)----
+
+workerTimeSum=235
+UnderTime = 245
+IdleTime = 25
+Cost=240
+task:41	startTime:362	finishTime:423BA
+
+task:84	startTime:426	finishTime:460AC
+
+task:963	startTime:463	finishTime:524CM
+
+task:985	startTime:543	finishTime:597MC
+--------------------------------
+
+TotalCost=22908

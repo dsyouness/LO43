@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="pane" prefHeight="329.0" prefWidth="535.0" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lo43p.FXMLDocumentController">
+    <children>
+      <Button id="btn1" layoutX="182.0" layoutY="252.0" mnemonicParsing="false" onAction="#config" prefHeight="70.0" prefWidth="69.0" stylesheets="@css/style.css">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="btn2" layoutX="300.0" layoutY="249.0" mnemonicParsing="false" onAction="#browse" prefHeight="70.0" prefWidth="69.0" stylesheets="@css/style.css">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="btn0" layoutX="77.0" layoutY="252.0" mnemonicParsing="false" onAction="#accl" prefHeight="70.0" prefWidth="69.0" stylesheets="@css/style.css">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="btn3" layoutX="420.0" layoutY="252.0" mnemonicParsing="false" onAction="#exit" prefHeight="70.0" prefWidth="69.0" stylesheets="@css/style.css">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="label" layoutX="303.0" layoutY="235.0" prefHeight="17.0" prefWidth="91.0" />
+    </children>
+</AnchorPane>

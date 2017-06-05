@@ -1,0 +1,254 @@
+**********The solution contains 18 driver(s).**********
+----Worker 1's task(s)----
+
+workerTimeSum=470
+UnderTime = 10
+IdleTime = 123
+Cost=103
+task:71	startTime:375	finishTime:439CB
+
+task:12	startTime:490	finishTime:546BA
+
+task:3	startTime:546	finishTime:595AB
+
+task:63	startTime:595	finishTime:651BC
+
+task:34	startTime:690	finishTime:749CA
+
+task:25	startTime:782	finishTime:845AC
+----Worker 2's task(s)----
+
+workerTimeSum=409
+UnderTime = 71
+IdleTime = 113
+Cost=154
+task:21	startTime:382	finishTime:450AC
+
+task:72	startTime:455	finishTime:519CB
+
+task:13	startTime:570	finishTime:619BA
+
+task:24	startTime:662	finishTime:721AC
+
+task:75	startTime:735	finishTime:791CB
+----Worker 3's task(s)----
+
+workerTimeSum=453
+UnderTime = 27
+IdleTime = 175
+Cost=172
+task:1	startTime:386	finishTime:442AB
+
+task:62	startTime:515	finishTime:579BC
+
+task:74	startTime:615	finishTime:671CB
+
+task:14	startTime:690	finishTime:739BA
+
+task:5	startTime:786	finishTime:839AB
+----Worker 4's task(s)----
+
+workerTimeSum=463
+UnderTime = 17
+IdleTime = 232
+Cost=219
+task:11	startTime:410	finishTime:466BA
+
+task:2	startTime:466	finishTime:522AB
+
+task:64	startTime:715	finishTime:771BC
+
+task:35	startTime:810	finishTime:873CA
+----Worker 5's task(s)----
+
+workerTimeSum=305
+UnderTime = 175
+IdleTime = 138
+Cost=283
+task:31	startTime:410	finishTime:478CA
+
+task:42	startTime:496	finishTime:523AD
+
+task:53	startTime:597	finishTime:620DA
+
+task:4	startTime:666	finishTime:715AB
+----Worker 6's task(s)----
+
+workerTimeSum=589
+OverTime = 109
+IdleTime = 376
+Cost=455
+task:41	startTime:416	finishTime:443AD
+
+task:52	startTime:517	finishTime:544DA
+
+task:43	startTime:576	finishTime:599AD
+
+task:54	startTime:717	finishTime:740DA
+
+task:45	startTime:816	finishTime:841AD
+
+task:56	startTime:917	finishTime:942DA
+
+task:27	startTime:942	finishTime:1005AC
+----Worker 7's task(s)----
+
+workerTimeSum=428
+UnderTime = 52
+IdleTime = 247
+Cost=269
+task:61	startTime:435	finishTime:499BC
+
+task:73	startTime:535	finishTime:599CB
+
+task:15	startTime:810	finishTime:863BA
+----Worker 8's task(s)----
+
+workerTimeSum=564
+OverTime = 84
+IdleTime = 390
+Cost=444
+task:51	startTime:437	finishTime:464DA
+
+task:23	startTime:542	finishTime:601AC
+
+task:36	startTime:890	finishTime:953CA
+
+task:47	startTime:976	finishTime:1001AD
+----Worker 9's task(s)----
+
+workerTimeSum=571
+OverTime = 91
+IdleTime = 270
+Cost=331
+task:22	startTime:462	finishTime:530AC
+
+task:33	startTime:570	finishTime:629CA
+
+task:44	startTime:696	finishTime:719AD
+
+task:55	startTime:837	finishTime:862DA
+
+task:26	startTime:862	finishTime:925AC
+
+task:37	startTime:970	finishTime:1033CA
+----Worker 10's task(s)----
+
+workerTimeSum=509
+OverTime = 29
+IdleTime = 388
+Cost=387
+task:32	startTime:490	finishTime:558CA
+
+task:7	startTime:946	finishTime:999AB
+----Worker 11's task(s)----
+
+workerTimeSum=398
+UnderTime = 82
+IdleTime = 120
+Cost=172
+task:6	startTime:866	finishTime:919AB
+
+task:67	startTime:995	finishTime:1055BC
+
+task:79	startTime:1095	finishTime:1155CB
+
+task:69	startTime:1155	finishTime:1206BC
+
+task:40	startTime:1210	finishTime:1264CA
+----Worker 12's task(s)----
+
+workerTimeSum=421
+UnderTime = 59
+IdleTime = 228
+Cost=257
+task:57	startTime:997	finishTime:1022DA
+
+task:28	startTime:1022	finishTime:1085AC
+
+task:39	startTime:1130	finishTime:1193CA
+
+task:50	startTime:1216	finishTime:1237AD
+
+task:60	startTime:1397	finishTime:1418DA
+----Worker 13's task(s)----
+
+workerTimeSum=431
+UnderTime = 49
+IdleTime = 209
+Cost=228
+task:78	startTime:1015	finishTime:1075CB
+
+task:68	startTime:1075	finishTime:1135BC
+
+task:80	startTime:1175	finishTime:1226CB
+
+task:70	startTime:1395	finishTime:1446BC
+----Worker 14's task(s)----
+
+workerTimeSum=376
+UnderTime = 104
+IdleTime = 112
+Cost=186
+task:76	startTime:855	finishTime:915CB
+
+task:17	startTime:970	finishTime:1023BA
+
+task:8	startTime:1026	finishTime:1079AB
+
+task:19	startTime:1130	finishTime:1183BA
+
+task:10	startTime:1186	finishTime:1231AB
+----Worker 15's task(s)----
+
+workerTimeSum=420
+UnderTime = 60
+IdleTime = 149
+Cost=179
+task:65	startTime:835	finishTime:895BC
+
+task:77	startTime:935	finishTime:995CB
+
+task:18	startTime:1050	finishTime:1103BA
+
+task:9	startTime:1106	finishTime:1159AB
+
+task:20	startTime:1210	finishTime:1255BA
+----Worker 16's task(s)----
+
+workerTimeSum=246
+UnderTime = 234
+IdleTime = 98
+Cost=302
+task:66	startTime:915	finishTime:975BC
+
+task:38	startTime:1050	finishTime:1113CA
+
+task:49	startTime:1136	finishTime:1161AD
+----Worker 17's task(s)----
+
+workerTimeSum=346
+UnderTime = 134
+IdleTime = 193
+Cost=297
+task:16	startTime:890	finishTime:943BA
+
+task:48	startTime:1056	finishTime:1081AD
+
+task:59	startTime:1157	finishTime:1178DA
+
+task:30	startTime:1182	finishTime:1236AC
+----Worker 18's task(s)----
+
+workerTimeSum=269
+UnderTime = 211
+IdleTime = 156
+Cost=337
+task:46	startTime:896	finishTime:921AD
+
+task:58	startTime:1077	finishTime:1102DA
+
+task:29	startTime:1102	finishTime:1165AC
+--------------------------------
+
+TotalCost=4775
