@@ -54,6 +54,13 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private void accl() {
       System.out.println("app");
+       
+    // do what you have to do
+       Platform.exit();
+
+      Main.main(new String[0]);
+      
+      
     }
     @FXML
     private void browse() throws IOException {
