@@ -1,11 +1,13 @@
 package lo43p;
 
+import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.util.ArrayList;
 
 import javax.swing.ButtonGroup;
+import javax.swing.ImageIcon;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JRadioButtonMenuItem;
@@ -54,19 +56,27 @@ public class Main extends ApplicationFrame implements ActionListener {
 	public void createGUI() {
 		// The old tabbed pane is garbage-collected.
 		// Thank you Java !
-		final JTabbedPane tabbedpane = new JTabbedPane();
-
+		final JTabbedPane tabbedpane = new JTabbedPane(JTabbedPane.LEFT);
 		instTabView = new InstancesTable(taches);
 		solView = new SolutionView(chauffeurs, config);
 		serView = new ServicesView(chauffeurs);
 		globSolView = new GlobalSolutionView(chauffeurs);
-
-		tabbedpane.add("Instance", instTabView);
-		tabbedpane.add("Solution", solView);
-		tabbedpane.add("Services", serView);
-		tabbedpane.add("Vue globale", globSolView);
+		tabbedpane.addTab("Instance",createImageIcon("img/tables-512.png", "xd"), instTabView);
+		tabbedpane.addTab("Solution", solView);
+		tabbedpane.addTab("Services", serView);
+		tabbedpane.addTab("Vue globale", globSolView);
 		setContentPane(tabbedpane);
 	}
+            protected ImageIcon createImageIcon(String path,
+                                               String description) {
+            java.net.URL imgURL = getClass().getResource(path);
+            if (imgURL != null) {
+            return new ImageIcon(imgURL, description);
+            } else {
+            System.err.println("Couldn't find file: " + path);
+            return null;
+            }
+            }
 
 	private void createmenu() {
 		final JMenuBar menuBar = new JMenuBar();
