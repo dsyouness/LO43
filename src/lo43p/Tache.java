@@ -4,6 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
+import org.jfree.data.time.Hour;
 
 public class Tache {
 	private final int id;
@@ -68,6 +69,11 @@ public class Tache {
 	public Date getTempsTrajet() {
 		return new Date(heureArrivee.getTime() - heureDepart.getTime());
 	}
+        
+        public String getTempsTrajetconvertit(){
+            Date xd=new Date(heureArrivee.getTime() - heureDepart.getTime()-(3600*1000));
+            return  sdf.format(xd);
+        }
 
 	public String toString() {
 		return String.valueOf(this.id) + ": " + String.valueOf(heureArrivee)
@@ -96,7 +102,7 @@ public class Tache {
 		case "O":
 			return "Moulin";
 		case "P":
-			return "La Dame";
+			return "La DAME";
 		case "U":
 			return "Laurencie";
 		default:

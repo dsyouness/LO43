@@ -5,6 +5,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.util.ArrayList;
+import javafx.scene.paint.Color;
+import javafx.stage.Stage;
 
 import javax.swing.ButtonGroup;
 import javax.swing.ImageIcon;
@@ -23,6 +25,7 @@ public class Main extends ApplicationFrame implements ActionListener {
 		final Main main = new Main(argv);
 		main.pack();
 		RefineryUtilities.centerFrameOnScreen(main);
+               // main.setUndecorated(true);
 		main.setVisible(true);
 	}
 	private Configuration config;
@@ -57,14 +60,19 @@ public class Main extends ApplicationFrame implements ActionListener {
 		// The old tabbed pane is garbage-collected.
 		// Thank you Java !
 		final JTabbedPane tabbedpane = new JTabbedPane(JTabbedPane.LEFT);
+                tabbedpane.setBackground(new java.awt.Color(99, 202, 243));
 		instTabView = new InstancesTable(taches);
 		solView = new SolutionView(chauffeurs, config);
 		serView = new ServicesView(chauffeurs);
 		globSolView = new GlobalSolutionView(chauffeurs);
-		tabbedpane.addTab("Instance",createImageIcon("img/tables-512.png", "xd"), instTabView);
-		tabbedpane.addTab("Solution", solView);
+    
+                
+                
+		tabbedpane.addTab("Instance",createImageIcon("img/instance-img.png", "xd"), instTabView);
+		tabbedpane.addTab("Solution",createImageIcon("img/solution-img.png", "xd"), solView);
 		tabbedpane.addTab("Services", serView);
-		tabbedpane.addTab("Vue globale", globSolView);
+		tabbedpane.addTab("Vue globale",createImageIcon("img/gantt-img.png", "xd"), globSolView);
+                
 		setContentPane(tabbedpane);
 	}
             protected ImageIcon createImageIcon(String path,

@@ -30,7 +30,7 @@ public class Parser {
 			final String pointA, pointB;
 
 			h1 = (s.nextInt()) * 60 + s.nextInt();
-			h2 = (s.nextInt()) * 60 + s.nextInt();
+			h2 = (s.nextInt())* 60 + s.nextInt();
 			pointA = Character.toString(s.next().charAt(0));
 			pointB = Character.toString(s.next().charAt(0));
 

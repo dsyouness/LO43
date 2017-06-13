@@ -8,7 +8,7 @@ public class TacheTableModel extends AbstractTableModel {
 
 	private static final long serialVersionUID = 1L;
 	final private String[] titles = { "Service", "Lieu départ", "Heure départ",
-			"Lieu arrivée", "Heure arrivée" };
+			"Lieu arrivée", "Heure arrivée", "Temps de trajet" };
 	final private List<Tache> tasks;
 
 	public TacheTableModel(List<Tache> tasks) {
@@ -37,8 +37,10 @@ public class TacheTableModel extends AbstractTableModel {
 			return this.tasks.get(rowIndex).getHeureDepart();
 		case 3:
 			return this.tasks.get(rowIndex).getLieuArrivee();
-		default:
+                case 4:
 			return this.tasks.get(rowIndex).getHeureArrivee();
+                default:
+                        return this.tasks.get(rowIndex).getTempsTrajetconvertit();
 		}
 	}
 }
