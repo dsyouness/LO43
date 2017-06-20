@@ -70,7 +70,7 @@ public class Main extends ApplicationFrame implements ActionListener {
                 
 		tabbedpane.addTab("Instance",createImageIcon("img/instance-img.png", "xd"), instTabView);
 		tabbedpane.addTab("Solution",createImageIcon("img/solution-img.png", "xd"), solView);
-		tabbedpane.addTab("Services", serView);
+		tabbedpane.addTab("Services",createImageIcon("img/service-img.png", "xd"), serView);
 		tabbedpane.addTab("Vue globale",createImageIcon("img/gantt-img.png", "xd"), globSolView);
                 
 		setContentPane(tabbedpane);

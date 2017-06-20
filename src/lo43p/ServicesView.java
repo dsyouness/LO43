@@ -4,12 +4,19 @@ import java.awt.BorderLayout;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+import javafx.scene.chart.NumberAxis;
 
 import javax.swing.JPanel;
 
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
+import org.jfree.chart.axis.ValueAxis;
+import org.jfree.chart.plot.CategoryPlot;
+import org.jfree.chart.plot.PlotOrientation;
+import org.jfree.chart.plot.PlotRenderingInfo;
+import org.jfree.chart.plot.XYPlot;
+import org.jfree.data.category.DefaultCategoryDataset;
 import org.jfree.data.general.DefaultPieDataset;
 import org.jfree.data.general.PieDataset;
 
@@ -17,7 +24,8 @@ public class ServicesView extends JPanel {
 
 	private static final long serialVersionUID = 1L;
 	private final ArrayList<Chauffeur> chauffeurs;
-	private final DefaultPieDataset dataset = new DefaultPieDataset();
+	private final DefaultCategoryDataset  dataset = new DefaultCategoryDataset ();
+        
 
 	public ServicesView(ArrayList<Chauffeur> chauffeurs) {
 		this.chauffeurs = chauffeurs;
@@ -27,14 +35,17 @@ public class ServicesView extends JPanel {
 	}
 
 	private JFreeChart createChart() {
-		return ChartFactory.createPieChart("Répartition des services", // chart
-																		// title
+		return ChartFactory.createBarChart3D("Répartition des services", // chart
+				"service",
+                                "pourcentage",// title
 				dataset, // data
+                                PlotOrientation.VERTICAL,
 				true, // include legend
 				true, true);
 	}
-
-	private PieDataset createDataset() {
+       
+        
+	private DefaultCategoryDataset createDataset() {
 		double matin = 0, jour = 0, soir = 0, nuit = 0;
 		for (Chauffeur chauffeur : chauffeurs) {
 			for (Tache task : chauffeur.getTasks()) {
@@ -53,10 +64,12 @@ public class ServicesView extends JPanel {
 			}
 		}
 
-		dataset.setValue("Matin", matin);
-		dataset.setValue("Jour", jour);
-		dataset.setValue("Soir", soir);
-		dataset.setValue("Nuit", nuit);
-		return dataset;
+		
+                dataset.setValue(matin, "Matin", "");
+               dataset.setValue(jour, "Jour", "");
+               dataset.setValue(soir, "Soir", "");
+               dataset.setValue(nuit, "Nuit", "");
+              
+                return dataset;
 	}
 }
