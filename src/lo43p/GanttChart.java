@@ -38,8 +38,8 @@ public class GanttChart {
 	}
 
 	public GanttChart(Chauffeur chauffeur) {
-		this.axeOrdonnee = "Taches";
-		this.title = "Chauffeur " + chauffeur.getId();
+		this.axeOrdonnee = "Instance Numéro";
+		this.title = "GANTT ";
 		this.setData(chauffeur);
 	}
 
@@ -58,7 +58,7 @@ public class GanttChart {
 	}
 
 	private void setData(ArrayList<Chauffeur> chauffeurs) {
-		final TaskSeries taskSerie = new TaskSeries("Informations globales");
+		final TaskSeries taskSerie = new TaskSeries("Gantt Géneral");
 
 		for (Chauffeur chauffeur : chauffeurs) {
 			final Task tasksChauffeur = new Task("Chauffeur "
@@ -81,8 +81,8 @@ public class GanttChart {
 		final TaskSeries ts = new TaskSeries(String.valueOf(chauffeur.getId()));
 
 		for (Tache tache : chauffeur.getTasks())
-			ts.add(new Task(String.valueOf(chauffeur.getId())
-					+ String.valueOf(tache.getId()), new SimpleTimePeriod(tache
+			ts.add(new Task(
+					String.valueOf(tache.getId()), new SimpleTimePeriod(tache
 					.getHeureDepartMinutes(), tache.getHeureArriveeMinutes())));
 
 		this.dataset.add(ts);

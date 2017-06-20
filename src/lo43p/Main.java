@@ -60,7 +60,7 @@ public class Main extends ApplicationFrame implements ActionListener {
 		// The old tabbed pane is garbage-collected.
 		// Thank you Java !
 		final JTabbedPane tabbedpane = new JTabbedPane(JTabbedPane.LEFT);
-                tabbedpane.setBackground(new java.awt.Color(99, 202, 243));
+                tabbedpane.setBackground(new java.awt.Color(89, 158, 181));
 		instTabView = new InstancesTable(taches);
 		solView = new SolutionView(chauffeurs, config);
 		serView = new ServicesView(chauffeurs);
@@ -70,8 +70,8 @@ public class Main extends ApplicationFrame implements ActionListener {
                 
 		tabbedpane.addTab("Instance",createImageIcon("img/instance-img.png", "xd"), instTabView);
 		tabbedpane.addTab("Solution",createImageIcon("img/solution-img.png", "xd"), solView);
-		tabbedpane.addTab("Services",createImageIcon("img/service-img.png", "xd"), serView);
-		tabbedpane.addTab("Vue globale",createImageIcon("img/gantt-img.png", "xd"), globSolView);
+		tabbedpane.addTab("Gantt",createImageIcon("img/gantt-img.png", "xd"), globSolView);
+                tabbedpane.addTab("Services",createImageIcon("img/service-img.png", "xd"), serView);
                 
 		setContentPane(tabbedpane);
 	}

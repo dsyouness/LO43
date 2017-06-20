@@ -4,12 +4,14 @@ import java.awt.BorderLayout;
 import java.util.ArrayList;
 
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 
 import org.jfree.chart.ChartPanel;
 
 public class GlobalSolutionView extends JPanel {
 	private static final long serialVersionUID = 1L;
 	private GanttChart gc;
+        
 
 	public GlobalSolutionView(ArrayList<Chauffeur> chauffeurs) {
 		this.setLayout(new BorderLayout());

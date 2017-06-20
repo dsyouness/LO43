@@ -1,6 +1,8 @@
 package lo43p;
 
 import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
@@ -25,7 +27,7 @@ public class SolutionView extends JPanel implements ActionListener {
 	private GanttChart gc;
 
 	public SolutionView(ArrayList<Chauffeur> chauffeurs, Configuration config) {
-		this.setLayout(new BoxLayout(this, BoxLayout.X_AXIS));
+		this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
 
 		this.chauffeurs = chauffeurs;
 		this.config = config;
@@ -61,9 +63,12 @@ public class SolutionView extends JPanel implements ActionListener {
 		gantt.setLayout(new BoxLayout(gantt, BoxLayout.X_AXIS));
 
 		final JPanel informations = new JPanel();
-		informations.setLayout(new BoxLayout(informations, BoxLayout.Y_AXIS));
+		informations.setLayout(new BoxLayout(informations, FlowLayout.CENTER));
+
+              
 
 		final JComboBox<String> combobox = new JComboBox<String>();
+            
 		combobox.addActionListener(this);
 
 		infoChauffeur = new JTextPane();
@@ -71,14 +76,7 @@ public class SolutionView extends JPanel implements ActionListener {
 				BorderFactory.createLineBorder(new Color(0, 0, 0), 2),
 				"Informations sur le chauffeur", 0, 0));
 
-		final JTextPane infoSolution = new JTextPane();
-		infoSolution.setBorder(BorderFactory.createTitledBorder(
-				BorderFactory.createLineBorder(new Color(0, 0, 0), 2),
-				"Informations sur la solution", 0, 0));
-		infoSolution.setText("- Nombre de chauffeurs: " + chauffeurs.size()
-				+ '\n' + "- Coût total de la solution: "
-				+ this.calculCoutTotal() + '\n' + "- Nombre total de tâches: "
-				+ this.calculNbTaches() + '\n');
+		
 
 		final JTextPane infoLegales = new JTextPane();
 		infoLegales.setBorder(BorderFactory.createTitledBorder(
@@ -98,10 +96,9 @@ public class SolutionView extends JPanel implements ActionListener {
 			combobox.addItem("Chauffeur " + chauffeur.getId());
 
 		updateInfoChauffeur();
-
 		informations.add(combobox);
 		informations.add(infoChauffeur);
-		informations.add(infoSolution);
+		//informations.add(infoSolution);
 		informations.add(infoLegales);
 		this.add(informations);
 
