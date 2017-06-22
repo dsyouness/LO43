@@ -145,7 +145,7 @@ public class VueSolution extends JPanel implements ActionListener {
 		workTimeSup += "\n";
 
 		String tempsTravail = new String("- Temps de travail: "
-				+ chauffeurs.get(chauffeurActuel).getWorkerTimeSum());
+				+ chauffeurs.get(chauffeurActuel).getWorkerTimeSumConvert());
 		if (chauffeurs.get(chauffeurActuel).getWorkerTimeSumMinutes() > config
 				.getWorkTimeMinutes())
 			tempsTravail += "(> durée legale)";

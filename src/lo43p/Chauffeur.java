@@ -62,7 +62,7 @@ public class Chauffeur {
 		return this.underTime;
 	}
 
-	public String getWorkerTimeSum() {
+	public String getWorkerTimeSumConvert() {
 		return new String((this.workerTimeSum) / 60
 				+ "h " + this.workerTimeSum % 60 + "m");
 	}
@@ -71,11 +71,5 @@ public class Chauffeur {
 		return this.workerTimeSum;
 	}
 
-	public String toString() {
-		return String.valueOf(this.id_chauffeur) + ":\n\tworkersumtime: "
-				+ String.valueOf(workerTimeSum) + "\tundertime: "
-				+ String.valueOf(underTime) + "\tidletime: "
-				+ String.valueOf(idleTime) + "\tcost:" + String.valueOf(cost)
-				+ "\ttaches" + String.valueOf(tasks);
-	}
+	
 }

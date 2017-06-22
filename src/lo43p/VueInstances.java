@@ -156,11 +156,11 @@ class TacheTableModel extends AbstractTableModel {
 		case 1:
 			return this.tasks.get(rowIndex).getLieuDepart();
 		case 2:
-			return this.tasks.get(rowIndex).getHeureDepart();
+			return this.tasks.get(rowIndex).getHeureDepartConvert();
 		case 3:
 			return this.tasks.get(rowIndex).getLieuArrivee();
                 case 4:
-			return this.tasks.get(rowIndex).getHeureArrivee();
+			return this.tasks.get(rowIndex).getHeureArriveeConvert();
                 default:
                         return this.tasks.get(rowIndex).getTempsTrajetconvertit();
 		}

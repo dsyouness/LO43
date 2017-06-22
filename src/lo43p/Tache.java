@@ -28,7 +28,7 @@ public class Tache {
                
 	}
 
-	public String getHeureArrivee() {
+	public String getHeureArriveeConvert() {
 		return sdf.format(this.FinishTime);
 	}
 
@@ -36,7 +36,7 @@ public class Tache {
 		return this.FinishTime;
 	}
 
-	public String getHeureDepart() {
+	public String getHeureDepartConvert() {
 		return sdf.format(this.StartTime);
 	}
 
@@ -76,15 +76,11 @@ public class Tache {
 	}
         
         public String getTempsTrajetconvertit(){
-            Date xd=new Date(FinishTime.getTime() - StartTime.getTime()-(3600*1000));
-            return  sdf.format(xd);
+            Date tmptrajet=new Date(FinishTime.getTime() - StartTime.getTime()-(3600*1000));
+            return  sdf.format(tmptrajet);
         }
 
-	public String toString() {
-		return String.valueOf(this.id_tache) + ": " + String.valueOf(FinishTime)
-				+ " " + String.valueOf(StartTime) + " " + StationDepart + " "
-				+ StationArrivee;
-	}
+	
 
 	private String NomStation(String lieu) {
 		switch (lieu) {
@@ -145,11 +141,11 @@ public class Tache {
 		case 1:
 			return this.tasks.get(rowIndex).getLieuDepart();
 		case 2:
-			return this.tasks.get(rowIndex).getHeureDepart();
+			return this.tasks.get(rowIndex).getHeureDepartConvert();
 		case 3:
 			return this.tasks.get(rowIndex).getLieuArrivee();
                 case 4:
-			return this.tasks.get(rowIndex).getHeureArrivee();
+			return this.tasks.get(rowIndex).getHeureArriveeConvert();
                 default:
                         return this.tasks.get(rowIndex).getTempsTrajetconvertit();
 		}
