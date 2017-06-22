@@ -20,14 +20,14 @@ import org.jfree.data.category.DefaultCategoryDataset;
 import org.jfree.data.general.DefaultPieDataset;
 import org.jfree.data.general.PieDataset;
 
-public class ServicesView extends JPanel {
+public class VueServices extends JPanel {
 
 	private static final long serialVersionUID = 1L;
 	private final ArrayList<Chauffeur> chauffeurs;
 	private final DefaultCategoryDataset  dataset = new DefaultCategoryDataset ();
         
 
-	public ServicesView(ArrayList<Chauffeur> chauffeurs) {
+	public VueServices(ArrayList<Chauffeur> chauffeurs) {
 		this.chauffeurs = chauffeurs;
 		createDataset();
 		this.setLayout(new BorderLayout());

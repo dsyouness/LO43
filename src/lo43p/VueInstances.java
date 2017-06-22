@@ -14,9 +14,11 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.RowFilter;
+import javax.swing.table.AbstractTableModel;
 import javax.swing.table.TableRowSorter;
 
-public class InstancesTable extends JPanel implements ActionListener {
+
+public class VueInstances extends JPanel implements ActionListener {
 	private static final long serialVersionUID = 1L;
 
 	final private JComboBox<String> serviceComboBox = new JComboBox<String>();
@@ -26,7 +28,7 @@ public class InstancesTable extends JPanel implements ActionListener {
 	private TableRowSorter<TacheTableModel> sorter;
 	private List<Tache> tasks;
 
-	public InstancesTable(List<Tache> taskTableModel) {
+	public VueInstances(List<Tache> taskTableModel) {
 		this.setLayout(new BorderLayout());
 		this.tasks = taskTableModel;
 		createUI();
@@ -56,7 +58,8 @@ public class InstancesTable extends JPanel implements ActionListener {
 
 	private void createUI() {
 		final TacheTableModel taskTableModel = new TacheTableModel(this.tasks);
-		this.sorter = new TableRowSorter<TacheTableModel>(taskTableModel);
+		
+                this.sorter = new TableRowSorter<TacheTableModel>(taskTableModel);
 
 		final JPanel filterPanel = new JPanel();
 		filterPanel.setLayout(new BoxLayout(filterPanel, BoxLayout.X_AXIS));
@@ -123,3 +126,44 @@ public class InstancesTable extends JPanel implements ActionListener {
 		this.sorter.setRowFilter(compoundRowFilter);
 	}
 }
+class TacheTableModel extends AbstractTableModel {
+
+	private static final long serialVersionUID = 1L;
+	final private String[] titles = { "Service", "Lieu départ", "Heure départ",
+			"Lieu arrivée", "Heure arrivée", "Temps de trajet" };
+	final private List<Tache> tasks;
+
+	public TacheTableModel(List<Tache> tasks) {
+		this.tasks = tasks;
+	}
+
+	public int getColumnCount() {
+		return this.titles.length;
+	}
+
+	public String getColumnName(int columnIndex) {
+		return this.titles[columnIndex];
+	}
+
+	public int getRowCount() {
+		return this.tasks.size();
+	}
+
+	public Object getValueAt(int rowIndex, int columnIndex) {
+		switch (columnIndex) {
+		case 0:
+			return this.tasks.get(rowIndex).getService();
+		case 1:
+			return this.tasks.get(rowIndex).getLieuDepart();
+		case 2:
+			return this.tasks.get(rowIndex).getHeureDepart();
+		case 3:
+			return this.tasks.get(rowIndex).getLieuArrivee();
+                case 4:
+			return this.tasks.get(rowIndex).getHeureArrivee();
+                default:
+                        return this.tasks.get(rowIndex).getTempsTrajetconvertit();
+		}
+	}
+}
+

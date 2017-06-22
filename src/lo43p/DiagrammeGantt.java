@@ -13,7 +13,7 @@ import org.jfree.data.gantt.TaskSeries;
 import org.jfree.data.gantt.TaskSeriesCollection;
 import org.jfree.data.time.SimpleTimePeriod;
 
-public class GanttChart {
+public class DiagrammeGantt {
 	private static class RainbowRenderer extends GanttRenderer {
 		private static final long serialVersionUID = 1L;
 		private static final Random randomGenerator = new Random();
@@ -31,13 +31,13 @@ public class GanttChart {
 
 	private final String title, axeOrdonnee;
 
-	public GanttChart(ArrayList<Chauffeur> chauffeurs) {
+	public DiagrammeGantt(ArrayList<Chauffeur> chauffeurs) {
 		this.axeOrdonnee = "Chauffeurs";
 		this.title = "Informations globales";
 		this.setData(chauffeurs);
 	}
 
-	public GanttChart(Chauffeur chauffeur) {
+	public DiagrammeGantt(Chauffeur chauffeur) {
 		this.axeOrdonnee = "Instance Numéro";
 		this.title = "GANTT ";
 		this.setData(chauffeur);

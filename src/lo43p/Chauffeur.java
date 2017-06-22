@@ -3,12 +3,12 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public class Chauffeur {
-	private final int id, workerTimeSum, underTime, idleTime, cost;
+	private final int id_chauffeur, workerTimeSum, underTime, idleTime, cost;
 	private final ArrayList<Tache> tasks;
 
 	public Chauffeur(int id, int workerTime, int underTime, int idleTime,
 			int cost, ArrayList<Tache> tasks) {
-		this.id = id;
+		this.id_chauffeur = id;
 		this.workerTimeSum = workerTime;
 		this.underTime = underTime;
 		this.idleTime = idleTime;
@@ -37,15 +37,15 @@ public class Chauffeur {
 	}
 
 	public int getId() {
-		return this.id;
+		return this.id_chauffeur;
 	}
 
-	public String getIdleTime() {
+	public String getidleTimeConvert() {
 		return new String((this.idleTime) / 60 + "h "
 				+ this.idleTime % 60 + "m");
 	}
 
-	public int getIdleTimeMinutes() {
+	public int getidelTimeMinutes() {
 		return this.idleTime;
 	}
 
@@ -53,8 +53,8 @@ public class Chauffeur {
 		return this.tasks;
 	}
 
-	public String getUnderTimeSum() {
-		return new String((this.underTime - this.underTime % 60) / 60 + "h "
+	public String getUnderTimeSumConvert() {
+		return new String((this.underTime)  / 60 + "h "
 				+ this.underTime % 60 + "m");
 	}
 
@@ -63,7 +63,7 @@ public class Chauffeur {
 	}
 
 	public String getWorkerTimeSum() {
-		return new String((this.workerTimeSum - this.workerTimeSum % 60) / 60
+		return new String((this.workerTimeSum) / 60
 				+ "h " + this.workerTimeSum % 60 + "m");
 	}
 
@@ -72,7 +72,7 @@ public class Chauffeur {
 	}
 
 	public String toString() {
-		return String.valueOf(this.id) + ":\n\tworkersumtime: "
+		return String.valueOf(this.id_chauffeur) + ":\n\tworkersumtime: "
 				+ String.valueOf(workerTimeSum) + "\tundertime: "
 				+ String.valueOf(underTime) + "\tidletime: "
 				+ String.valueOf(idleTime) + "\tcost:" + String.valueOf(cost)

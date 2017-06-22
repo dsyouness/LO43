@@ -6,82 +6,87 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 import org.jfree.data.time.Hour;
 
-public class Tache {
-	private final int id;
-	private final Date heureDepart, heureArrivee;
-	private final String lieuDepart, lieuArrivee;
-	private final SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");
+import java.util.List;
 
-	public Tache(int id, int heureDepart, int heureArrivee, String lieuDepart,
-			String lieuArrivee) {
-		this.id = id;
-		this.heureDepart = new Date(1000L * 60L * (heureDepart-60));
-		this.heureArrivee = new Date(1000L * 60L * (heureArrivee-60));
-		this.lieuDepart = translate(lieuDepart);
-		this.lieuArrivee = translate(lieuArrivee);
+import javax.swing.table.AbstractTableModel;
+
+
+public class Tache {
+	private final int id_tache;
+	private final Date StartTime, FinishTime;
+	private final String StationDepart, StationArrivee;
+	private final SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");
+           
+	public Tache(int id_tache, int StartTime, int FinishTime, String StationDepart,
+			String StationArrivee) {
+		this.id_tache = id_tache;
+		this.StartTime = new Date(1000L * 60L * (StartTime-60));
+		this.FinishTime = new Date(1000L * 60L * (FinishTime-60));
+		this.StationDepart = NomStation(StationDepart);
+		this.StationArrivee = NomStation(StationArrivee);
                 
                
 	}
 
 	public String getHeureArrivee() {
-		return sdf.format(this.heureArrivee);
+		return sdf.format(this.FinishTime);
 	}
 
 	public Date getHeureArriveeMinutes() {
-		return this.heureArrivee;
+		return this.FinishTime;
 	}
 
 	public String getHeureDepart() {
-		return sdf.format(this.heureDepart);
+		return sdf.format(this.StartTime);
 	}
 
 	public Date getHeureDepartMinutes() {
-		return this.heureDepart;
+		return this.StartTime;
 	}
 
 	public int getId() {
-		return id;
+		return id_tache;
 	}
 
 	public String getLieuArrivee() {
-		return this.lieuArrivee;
+		return this.StationArrivee;
 	}
 
 	public String getLieuDepart() {
-		return this.lieuDepart;
+		return this.StationDepart;
 	}
 
 	public String getService() {
 		final Calendar calendar = GregorianCalendar.getInstance();
 		calendar.setTime(this.getHeureDepartMinutes());
-		final int heureDepart = calendar.get(Calendar.HOUR_OF_DAY);
+		final int StartTime = calendar.get(Calendar.HOUR_OF_DAY);
 
-		if (heureDepart < 7)
+		if (StartTime < 7)
 			return "matin";
-		else if (heureDepart < 17)
+		else if (StartTime < 17)
 			return "jour";
-		else if (heureDepart < 20)
+		else if (StartTime < 20)
 			return "soir";
 		else
 			return "nuit";
 	}
 
 	public Date getTempsTrajet() {
-		return new Date(heureArrivee.getTime() - heureDepart.getTime());
+		return new Date(FinishTime.getTime() - StartTime.getTime());
 	}
         
         public String getTempsTrajetconvertit(){
-            Date xd=new Date(heureArrivee.getTime() - heureDepart.getTime()-(3600*1000));
+            Date xd=new Date(FinishTime.getTime() - StartTime.getTime()-(3600*1000));
             return  sdf.format(xd);
         }
 
 	public String toString() {
-		return String.valueOf(this.id) + ": " + String.valueOf(heureArrivee)
-				+ " " + String.valueOf(heureDepart) + " " + lieuDepart + " "
-				+ lieuArrivee;
+		return String.valueOf(this.id_tache) + ": " + String.valueOf(FinishTime)
+				+ " " + String.valueOf(StartTime) + " " + StationDepart + " "
+				+ StationArrivee;
 	}
 
-	private String translate(String lieu) {
+	private String NomStation(String lieu) {
 		switch (lieu) {
 		case "A":
 			return "Valdoie Mairie";
@@ -109,4 +114,47 @@ public class Tache {
 			return lieu;
 		}
 	}
+        
+        public class TacheTableModel extends AbstractTableModel {
+
+	private static final long serialVersionUID = 1L;
+	final private String[] titles = { "Service", "Lieu départ", "Heure départ",
+			"Lieu arrivée", "Heure arrivée", "Temps de trajet" };
+	final private List<Tache> tasks;
+
+	public TacheTableModel(List<Tache> tasks) {
+		this.tasks = tasks;
+	}
+
+	public int getColumnCount() {
+		return this.titles.length;
+	}
+
+	public String getColumnName(int columnIndex) {
+		return this.titles[columnIndex];
+	}
+
+	public int getRowCount() {
+		return this.tasks.size();
+	}
+
+	public Object getValueAt(int rowIndex, int columnIndex) {
+		switch (columnIndex) {
+		case 0:
+			return this.tasks.get(rowIndex).getService();
+		case 1:
+			return this.tasks.get(rowIndex).getLieuDepart();
+		case 2:
+			return this.tasks.get(rowIndex).getHeureDepart();
+		case 3:
+			return this.tasks.get(rowIndex).getLieuArrivee();
+                case 4:
+			return this.tasks.get(rowIndex).getHeureArrivee();
+                default:
+                        return this.tasks.get(rowIndex).getTempsTrajetconvertit();
+		}
+	}
 }
+}
+
+ 

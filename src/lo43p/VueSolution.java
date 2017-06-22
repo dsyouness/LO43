@@ -15,7 +15,16 @@ import javax.swing.JTextPane;
 
 import org.jfree.chart.ChartPanel;
 
-public class SolutionView extends JPanel implements ActionListener {
+
+import java.awt.BorderLayout;
+import java.util.ArrayList;
+
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+
+import org.jfree.chart.ChartPanel;
+
+public class VueSolution extends JPanel implements ActionListener {
 
 	private static final long serialVersionUID = 1L;
 
@@ -24,9 +33,9 @@ public class SolutionView extends JPanel implements ActionListener {
 	private ChartPanel chartPanel;
 	private JTextPane infoChauffeur;
 	private int chauffeurActuel = 0; // index du chauffeur actuel
-	private GanttChart gc;
+	private DiagrammeGantt gc;
 
-	public SolutionView(ArrayList<Chauffeur> chauffeurs, Configuration config) {
+	public VueSolution(ArrayList<Chauffeur> chauffeurs, Configuration config) {
 		this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
 
 		this.chauffeurs = chauffeurs;
@@ -40,7 +49,7 @@ public class SolutionView extends JPanel implements ActionListener {
 		final JComboBox<String> cb = (JComboBox<String>) ae.getSource();
 		chauffeurActuel = cb.getSelectedIndex();
 		updateInfoChauffeur();
-		gc = new GanttChart(this.chauffeurs.get(chauffeurActuel));
+		gc = new DiagrammeGantt(this.chauffeurs.get(chauffeurActuel));
 		chartPanel.setChart(gc.createChart());
 	}
 
@@ -88,7 +97,7 @@ public class SolutionView extends JPanel implements ActionListener {
 				+ '\n' + "- Durée de travail supplémetaire maximale: "
 				+ config.getExtraWorkTime());
 
-		gc = new GanttChart(this.chauffeurs.get(0)); // On affiche le premier
+		gc = new DiagrammeGantt(this.chauffeurs.get(0)); // On affiche le premier
 														// chauffeur
 		chartPanel = new ChartPanel(gc.createChart());
 
@@ -108,8 +117,8 @@ public class SolutionView extends JPanel implements ActionListener {
 
 	private void updateInfoChauffeur() {
 		String tempsRepos = new String("- Temps non travaillé: "
-				+ chauffeurs.get(chauffeurActuel).getIdleTime());
-		if (chauffeurs.get(chauffeurActuel).getIdleTimeMinutes() < config
+				+ chauffeurs.get(chauffeurActuel).getidleTimeConvert());
+		if (chauffeurs.get(chauffeurActuel).getidelTimeMinutes() < config
 				.getBreakTimeMinutes())
 			tempsRepos += "( < durée legale)";
 		tempsRepos += '\n';
@@ -119,7 +128,7 @@ public class SolutionView extends JPanel implements ActionListener {
 				.getWorkTimeMinutes()) {
 			undertime += "-";
 		}
-		undertime += chauffeurs.get(chauffeurActuel).getUnderTimeSum();
+		undertime += chauffeurs.get(chauffeurActuel).getUnderTimeSumConvert();
 		undertime += '\n';
 
 		String workTimeSup = new String("- Heure supplémentaire : ");
@@ -148,4 +157,20 @@ public class SolutionView extends JPanel implements ActionListener {
 				+ chauffeurs.get(chauffeurActuel).getTasks().size() + "\n"
 				+ undertime + tempsTravail + workTimeSup + tempsRepos);
 	}
+
+
+
+
+public class GlobalSolutionView extends JPanel {
+	private static final long serialVersionUID = 1L;
+	private DiagrammeGantt gc;
+        
+
+	public GlobalSolutionView(ArrayList<Chauffeur> chauffeurs) {
+		this.setLayout(new BorderLayout());
+		gc = new DiagrammeGantt(chauffeurs);
+		final ChartPanel chartPanel = new ChartPanel(gc.createChart());
+		this.add(chartPanel);
+	}
+}
 }
