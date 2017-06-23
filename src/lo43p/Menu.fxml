@@ -6,7 +6,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="pane" prefHeight="329.0" prefWidth="535.0" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lo43p.FXMLDocumentController">
+<AnchorPane id="pane" prefHeight="329.0" prefWidth="535.0" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lo43p.MenuController">
     <children>
       <Button id="btn1" layoutX="182.0" layoutY="252.0" mnemonicParsing="false" onAction="#config" prefHeight="70.0" prefWidth="69.0" stylesheets="@css/style.css">
          <cursor>

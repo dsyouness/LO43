@@ -33,7 +33,7 @@ import javafx.stage.Stage;
  *
  * @author Youness-PC
  */
-public class FXMLDocumentController implements Initializable {
+public class MenuController implements Initializable {
     
     
     @FXML

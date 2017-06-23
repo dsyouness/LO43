@@ -82,20 +82,23 @@ public class VueSolution extends JPanel implements ActionListener {
 
 		infoChauffeur = new JTextPane();
 		infoChauffeur.setBorder(BorderFactory.createTitledBorder(
-				BorderFactory.createLineBorder(new Color(0, 0, 0), 2),
+				BorderFactory.createLineBorder(new Color(0, 0, 0), 1),
 				"Informations sur le chauffeur", 0, 0));
-
+                infoChauffeur.setBackground(new Color(112, 111, 111));
+                infoChauffeur.setForeground(Color.WHITE);
 		
 
 		final JTextPane infoLegales = new JTextPane();
 		infoLegales.setBorder(BorderFactory.createTitledBorder(
-				BorderFactory.createLineBorder(new Color(0, 0, 0), 2),
-				"Informations légales", 0, 0));
+				BorderFactory.createLineBorder(new Color(0, 0, 0), 1),
+				"Informations Configuration", 0, 0));
+                infoLegales.setBackground(new Color(112, 111, 111));
+                infoLegales.setForeground(Color.WHITE);
 		infoLegales.setText("- Durée légale d'une pause: "
 				+ config.getBreakTime() + '\n'
 				+ "- Durée légale d'une journée: " + config.getWorkTime()
 				+ '\n' + "- Durée de travail supplémetaire maximale: "
-				+ config.getExtraWorkTime());
+				+ config.getExtraWorkTime()+ '\n');
 
 		gc = new DiagrammeGantt(this.chauffeurs.get(0)); // On affiche le premier
 														// chauffeur
@@ -129,7 +132,7 @@ public class VueSolution extends JPanel implements ActionListener {
 			undertime += "-";
 		}
 		undertime += chauffeurs.get(chauffeurActuel).getUnderTimeSumConvert();
-		undertime += '\n';
+		undertime += "                        ";
 
 		String workTimeSup = new String("- Heure supplémentaire : ");
 		if (chauffeurs.get(chauffeurActuel).getWorkerTimeSumMinutes() > config
@@ -142,7 +145,7 @@ public class VueSolution extends JPanel implements ActionListener {
 		} else {
 			workTimeSup += "0h 0m";
 		}
-		workTimeSup += "\n";
+		workTimeSup += "                       ";
 
 		String tempsTravail = new String("- Temps de travail: "
 				+ chauffeurs.get(chauffeurActuel).getWorkerTimeSumConvert());
@@ -152,7 +155,7 @@ public class VueSolution extends JPanel implements ActionListener {
 		tempsTravail += '\n';
 
 		infoChauffeur.setText("- Coût: "
-				+ chauffeurs.get(chauffeurActuel).getCost() + "\n"
+				+ chauffeurs.get(chauffeurActuel).getgetCostconvert() + "                                                        "
 				+ "- Nombre de taches: "
 				+ chauffeurs.get(chauffeurActuel).getTasks().size() + "\n"
 				+ undertime + tempsTravail + workTimeSup + tempsRepos);

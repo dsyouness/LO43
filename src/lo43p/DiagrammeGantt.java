@@ -1,6 +1,7 @@
 package lo43p;
 
 import java.awt.Color;
+import java.awt.Image;
 import java.awt.Paint;
 import java.util.ArrayList;
 import java.util.Random;
@@ -14,7 +15,8 @@ import org.jfree.data.gantt.TaskSeriesCollection;
 import org.jfree.data.time.SimpleTimePeriod;
 
 public class DiagrammeGantt {
-	private static class RainbowRenderer extends GanttRenderer {
+    
+        private static class RainbowRenderer extends GanttRenderer {
 		private static final long serialVersionUID = 1L;
 		private static final Random randomGenerator = new Random();
 
@@ -27,13 +29,14 @@ public class DiagrammeGantt {
 			return new Color(red, green, blue);
 		}
 	}
+	
 	private final TaskSeriesCollection dataset = new TaskSeriesCollection();
 
 	private final String title, axeOrdonnee;
 
 	public DiagrammeGantt(ArrayList<Chauffeur> chauffeurs) {
 		this.axeOrdonnee = "Chauffeurs";
-		this.title = "Informations globales";
+		this.title = "GANTT Géneral";
 		this.setData(chauffeurs);
 	}
 
@@ -50,10 +53,12 @@ public class DiagrammeGantt {
 				"Heures", // domain axis label
 				this.dataset, // data
 				false, // include legend
-				false, // tooltips
+				true, // tooltips
 				false // urls
 				);
 		gc.getCategoryPlot().setRenderer(0, new RainbowRenderer());
+                gc.setBorderVisible(true);
+                gc.setBackgroundPaint(new Color(13, 128, 200));
 		return gc;
 	}
 
@@ -61,7 +66,7 @@ public class DiagrammeGantt {
 		final TaskSeries taskSerie = new TaskSeries("Gantt Géneral");
 
 		for (Chauffeur chauffeur : chauffeurs) {
-			final Task tasksChauffeur = new Task("Chauffeur "
+			final Task tasksChauffeur = new Task(""
 					+ chauffeur.getId(), chauffeur.getDebutService(),
 					chauffeur.getFinService());
 

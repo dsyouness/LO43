@@ -19,6 +19,10 @@ public class Chauffeur {
 	public int getCost() {
 		return this.cost;
 	}
+        public String getgetCostconvert(){
+            return new String((this.cost) / 60
+				+ "h " + this.cost % 60 + "m");
+        }
 
 	public Date getDebutService() {
 		Date minimum = tasks.get(0).getHeureDepartMinutes();

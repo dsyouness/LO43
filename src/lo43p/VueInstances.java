@@ -1,6 +1,7 @@
 package lo43p;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
@@ -64,7 +65,7 @@ public class VueInstances extends JPanel implements ActionListener {
 		final JPanel filterPanel = new JPanel();
 		filterPanel.setLayout(new BoxLayout(filterPanel, BoxLayout.X_AXIS));
 
-		final JLabel filterLabel = new JLabel("Filtres: ", JLabel.CENTER);
+		final JLabel filterLabel = new JLabel("Filtrer: ", JLabel.CENTER);
 
 		this.serviceComboBox.addItem("Tous les services");
 		this.serviceComboBox.addItem("matin");
@@ -100,6 +101,8 @@ public class VueInstances extends JPanel implements ActionListener {
 
 		final JTable tasksTable = new JTable(taskTableModel);
 		tasksTable.setRowSorter(this.sorter);
+                tasksTable.setBackground(new Color(112, 111, 111));
+                tasksTable.setForeground(Color.WHITE);
 
 		final JScrollPane jsp = new JScrollPane(tasksTable);
 		this.add(jsp, BorderLayout.CENTER);

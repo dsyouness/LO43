@@ -4,6 +4,7 @@ import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
+import java.io.FileFilter;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -17,6 +18,7 @@ import javax.swing.ButtonGroup;
 import javax.swing.ImageIcon;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
 import javax.swing.JRadioButtonMenuItem;
 import javax.swing.JTabbedPane;
 
@@ -40,8 +42,7 @@ public class Main extends ApplicationFrame implements ActionListener {
 	private Rfile parser;
 	private VueInstances instTabView;
 	private VueSolution solView;
-	private VueServices serView;
-
+	
 	private VueGlobale globSolView;
 
 	private String num = "1";
@@ -65,10 +66,9 @@ public class Main extends ApplicationFrame implements ActionListener {
 		// The old tabbed pane is garbage-collected.
 		// Thank you Java !
 		final JTabbedPane tabbedpane = new JTabbedPane(JTabbedPane.LEFT);
-                tabbedpane.setBackground(new java.awt.Color(89, 158, 181));
+                tabbedpane.setBackground(new java.awt.Color(112, 111, 111));
 		instTabView = new VueInstances(taches);
 		solView = new VueSolution(chauffeurs, config);
-		serView = new VueServices(chauffeurs);
                 globSolView = new VueGlobale(chauffeurs);
     
                 
@@ -76,7 +76,7 @@ public class Main extends ApplicationFrame implements ActionListener {
 		tabbedpane.addTab("Instance",createImageIcon("img/instance-img.png", "xd"), instTabView);
 		tabbedpane.addTab("Solution",createImageIcon("img/solution-img.png", "xd"), solView);
 		tabbedpane.addTab("Gantt",createImageIcon("img/gantt-img.png", "xd"), globSolView);
-                tabbedpane.addTab("Services",createImageIcon("img/service-img.png", "xd"), serView);
+                
                 
 		setContentPane(tabbedpane);
 	}
@@ -93,10 +93,21 @@ public class Main extends ApplicationFrame implements ActionListener {
 
 	private void createmenu() {
 		final JMenuBar menuBar = new JMenuBar();
+                final JMenu menui = new JMenu("Acceuil");
 		final JMenu menu = new JMenu("Instances");
+                JMenuItem menuMenu = new JMenuItem("Menu");
+                JMenuItem menuQuiter = new JMenuItem("Quiter");
 		final ButtonGroup bg = new ButtonGroup(); // mutual exclusion of radio
-
-		for (int i = 1; i < 5; i++) {
+                File file = new File("instances/");
+                File[] files = file.listFiles(new FileFilter() {
+                @Override
+                public boolean accept(File f) {
+                    return f.isDirectory();
+                }
+                 });
+                //System.out.println("Folders count: " + files.length);
+           
+		for (int i = 1; i < files.length+1; i++) {
 			final String si = Integer.toString(i);
 			JRadioButtonMenuItem item = new JRadioButtonMenuItem("Instance "
 					+ si, i < 2);
@@ -107,7 +118,16 @@ public class Main extends ApplicationFrame implements ActionListener {
 			bg.add(item);
 			menu.add(item);
 		}
+                menuBar.add(menui);
 		menuBar.add(menu);
+                menui.add(menuMenu);
+                menui.add(menuQuiter);
+                menuMenu.addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        //Menu.main(new String[0]);//To change body of generated methods, choose Tools | Templates.
+                    }
+                });
 
 		this.setJMenuBar(menuBar);
 	}
