@@ -1,33 +1,23 @@
 package lo43p;
 
 import java.awt.Color;
-import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.ArrayList;
-
 import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
 import javax.swing.JComboBox;
-import javax.swing.JPanel;
 import javax.swing.JTextPane;
-
-import org.jfree.chart.ChartPanel;
-
-
 import java.awt.BorderLayout;
 import java.util.ArrayList;
-
 import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-
 import org.jfree.chart.ChartPanel;
 
+// Class vue de "Solution"
 public class VueSolution extends JPanel implements ActionListener {
-
+    
+        //Définition des variables de la classe
 	private static final long serialVersionUID = 1L;
-
 	private final ArrayList<Chauffeur> chauffeurs;
 	private final Configuration config;
 	private ChartPanel chartPanel;
@@ -43,23 +33,24 @@ public class VueSolution extends JPanel implements ActionListener {
 		CreateUI();
 	}
 
-	@SuppressWarnings("unchecked")
+	
 	@Override
 	public void actionPerformed(ActionEvent ae) {
 		final JComboBox<String> cb = (JComboBox<String>) ae.getSource();
 		chauffeurActuel = cb.getSelectedIndex();
+                //Actualisation des diagrammes et informations chauffeurs
 		updateInfoChauffeur();
 		gc = new DiagrammeGantt(this.chauffeurs.get(chauffeurActuel));
 		chartPanel.setChart(gc.createChart());
 	}
-
+        //Calcul du coût total pour chaque chauffeur
 	private int calculCoutTotal() {
 		int cout = 0;
 		for (Chauffeur chauffeur : chauffeurs)
 			cout += chauffeur.getCost();
 		return cout;
 	}
-
+        //Calcul du nombre de tâches de chaque chauffeur
 	private int calculNbTaches() {
 		int nbtaches = 0;
 		for (Chauffeur chauffeur : chauffeurs)
@@ -68,18 +59,20 @@ public class VueSolution extends JPanel implements ActionListener {
 	}
 
 	private void CreateUI() {
+          //Crétion et définition de l'emplacement des diagrammes de la solution
 		final JPanel gantt = new JPanel();
 		gantt.setLayout(new BoxLayout(gantt, BoxLayout.X_AXIS));
-
+                
+             //Crétion et définition de l'emplacement des information relatives 
+             //à la solution et au chauffeur
 		final JPanel informations = new JPanel();
 		informations.setLayout(new BoxLayout(informations, FlowLayout.CENTER));
 
-              
-
+              //création de liste déroulante
 		final JComboBox<String> combobox = new JComboBox<String>();
-            
 		combobox.addActionListener(this);
-
+                
+            //Définition et design de la partie "Informations sur le chauffeur"
 		infoChauffeur = new JTextPane();
 		infoChauffeur.setBorder(BorderFactory.createTitledBorder(
 				BorderFactory.createLineBorder(new Color(0, 0, 0), 1),
@@ -87,7 +80,7 @@ public class VueSolution extends JPanel implements ActionListener {
                 infoChauffeur.setBackground(new Color(112, 111, 111));
                 infoChauffeur.setForeground(Color.WHITE);
 		
-
+             //Définition et design de la partie "Informations Configuration"
 		final JTextPane infoLegales = new JTextPane();
 		infoLegales.setBorder(BorderFactory.createTitledBorder(
 				BorderFactory.createLineBorder(new Color(0, 0, 0), 1),
@@ -100,24 +93,26 @@ public class VueSolution extends JPanel implements ActionListener {
 				+ '\n' + "- Durée de travail supplémetaire maximale: "
 				+ config.getExtraWorkTime()+ '\n');
 
-		gc = new DiagrammeGantt(this.chauffeurs.get(0)); // On affiche le premier
+		// On affiche le premier chauffeur par défaut
+                gc = new DiagrammeGantt(this.chauffeurs.get(0)); 
 														// chauffeur
 		chartPanel = new ChartPanel(gc.createChart());
 
 		for (Chauffeur chauffeur : chauffeurs)
 			combobox.addItem("Chauffeur " + chauffeur.getId());
-
+                
 		updateInfoChauffeur();
+                //Ajout des différentes parties
 		informations.add(combobox);
 		informations.add(infoChauffeur);
-		//informations.add(infoSolution);
 		informations.add(infoLegales);
 		this.add(informations);
-
+                //Ajout du diagramme de Gantt
 		gantt.add(chartPanel);
 		this.add(gantt);
 	}
-
+        //Mise à jour des infos chauffeurs suivant la configuration
+        //en comparaison avec les infos légales (config)
 	private void updateInfoChauffeur() {
 		String tempsRepos = new String("- Temps non travaillé: "
 				+ chauffeurs.get(chauffeurActuel).getidleTimeConvert());
@@ -165,10 +160,11 @@ public class VueSolution extends JPanel implements ActionListener {
 
 
 public class GlobalSolutionView extends JPanel {
+    //Définition des variable pour la Vue globale "Gantt" 
 	private static final long serialVersionUID = 1L;
 	private DiagrammeGantt gc;
         
-
+    //Mise en place de chaque diagramme des différents chauffeurs de l'instance
 	public GlobalSolutionView(ArrayList<Chauffeur> chauffeurs) {
 		this.setLayout(new BorderLayout());
 		gc = new DiagrammeGantt(chauffeurs);

@@ -1,6 +1,5 @@
 package lo43p;
 
-import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
@@ -11,9 +10,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Properties;
 import java.util.Scanner;
-import javafx.scene.paint.Color;
-import javafx.stage.Stage;
-
 import javax.swing.ButtonGroup;
 import javax.swing.ImageIcon;
 import javax.swing.JMenu;
@@ -32,13 +28,13 @@ public class Main extends ApplicationFrame implements ActionListener {
 		final Main main = new Main(argv);
 		main.pack();
 		RefineryUtilities.centerFrameOnScreen(main);
-               // main.setUndecorated(true);
 		main.setVisible(true);
 	}
+      //Définition des variables pour e "Main
 	private Configuration config;
 	private ArrayList<Tache> taches;
 	private ArrayList<Chauffeur> chauffeurs;
-
+        //PErmet la lecture de fichier
 	private Rfile parser;
 	private VueInstances instTabView;
 	private VueSolution solView;
@@ -63,8 +59,7 @@ public class Main extends ApplicationFrame implements ActionListener {
 	}
           
 	public void createGUI() {
-		// The old tabbed pane is garbage-collected.
-		// Thank you Java !
+		
 		final JTabbedPane tabbedpane = new JTabbedPane(JTabbedPane.LEFT);
                 tabbedpane.setBackground(new java.awt.Color(112, 111, 111));
 		instTabView = new VueInstances(taches);
@@ -90,14 +85,14 @@ public class Main extends ApplicationFrame implements ActionListener {
             return null;
             }
             }
-
+//Création du menu  d'accueil
 	private void createmenu() {
 		final JMenuBar menuBar = new JMenuBar();
                 final JMenu menui = new JMenu("Acceuil");
 		final JMenu menu = new JMenu("Instances");
                 JMenuItem menuMenu = new JMenuItem("Menu");
                 JMenuItem menuQuiter = new JMenuItem("Quiter");
-		final ButtonGroup bg = new ButtonGroup(); // mutual exclusion of radio
+		final ButtonGroup bg = new ButtonGroup(); 
                 File file = new File("instances/");
                 File[] files = file.listFiles(new FileFilter() {
                 @Override
@@ -105,7 +100,6 @@ public class Main extends ApplicationFrame implements ActionListener {
                     return f.isDirectory();
                 }
                  });
-                //System.out.println("Folders count: " + files.length);
            
 		for (int i = 1; i < files.length+1; i++) {
 			final String si = Integer.toString(i);
@@ -132,6 +126,7 @@ public class Main extends ApplicationFrame implements ActionListener {
 		this.setJMenuBar(menuBar);
 	}
 
+        //Lire les fichiers
 	private void parseFiles() {
 		parser = new Rfile();
 
@@ -166,7 +161,7 @@ public class Main extends ApplicationFrame implements ActionListener {
 
 
 
-///////////// Lire les fichier
+//classe qui permet la lecture de fichiers
 class Rfile {
 	public Configuration Rfile_config(String inputFile)
 			throws FileNotFoundException, IOException {

@@ -28,7 +28,8 @@ public class VueInstances extends JPanel implements ActionListener {
 
 	private TableRowSorter<TacheTableModel> sorter;
 	private List<Tache> tasks;
-
+        
+        //Création du tableau des tâches
 	public VueInstances(List<Tache> taskTableModel) {
 		this.setLayout(new BorderLayout());
 		this.tasks = taskTableModel;
@@ -36,6 +37,8 @@ public class VueInstances extends JPanel implements ActionListener {
 	}
 
 	@Override
+        //Permet de faire des sélection sur la barre de filtre 
+        //et d'actualiser le contenu
 	public void actionPerformed(ActionEvent event) {
 		if (event.getSource() == this.serviceComboBox
 				|| event.getSource() == this.departComboBox
@@ -58,13 +61,14 @@ public class VueInstances extends JPanel implements ActionListener {
 	}
 
 	private void createUI() {
+            //Définition du tableau de tâches
 		final TacheTableModel taskTableModel = new TacheTableModel(this.tasks);
 		
                 this.sorter = new TableRowSorter<TacheTableModel>(taskTableModel);
 
 		final JPanel filterPanel = new JPanel();
 		filterPanel.setLayout(new BoxLayout(filterPanel, BoxLayout.X_AXIS));
-
+                //Définition de la barre de filtre avec ses contenus
 		final JLabel filterLabel = new JLabel("Filtrer: ", JLabel.CENTER);
 
 		this.serviceComboBox.addItem("Tous les services");
@@ -73,7 +77,7 @@ public class VueInstances extends JPanel implements ActionListener {
 		this.serviceComboBox.addItem("soir");
 		this.serviceComboBox.addItem("nuit");
 
-		// Recuperation du set des lieux de depart
+		// Recuperation des modifications sur les lieux de depart
 		final TreeSet<String> departSet = new TreeSet<String>();
 		final TreeSet<String> arriveeSet = new TreeSet<String>();
 		for (Tache task : this.tasks) {
@@ -107,7 +111,7 @@ public class VueInstances extends JPanel implements ActionListener {
 		final JScrollPane jsp = new JScrollPane(tasksTable);
 		this.add(jsp, BorderLayout.CENTER);
 	}
-
+        //Mis à jour des données du tableau
 	private void updateFilter(String serviceRegex, String departureRegex,
 			String arrivalRegex) {
 		final RowFilter<TacheTableModel, Object> serviceFilter = RowFilter
@@ -139,19 +143,23 @@ class TacheTableModel extends AbstractTableModel {
 	public TacheTableModel(List<Tache> tasks) {
 		this.tasks = tasks;
 	}
-
+        
+        //Permet de récupérer le nombre de colonne
 	public int getColumnCount() {
 		return this.titles.length;
 	}
 
+        //Permet de récupérer les noms de colonne
 	public String getColumnName(int columnIndex) {
 		return this.titles[columnIndex];
 	}
 
+        //Permet de récupérer le nombre de tâches
 	public int getRowCount() {
 		return this.tasks.size();
 	}
 
+       //Récupérer la valeur selon l'index du tableau choisi
 	public Object getValueAt(int rowIndex, int columnIndex) {
 		switch (columnIndex) {
 		case 0:

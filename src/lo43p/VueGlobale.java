@@ -10,10 +10,7 @@ import java.util.ArrayList;
 import javax.swing.JPanel;
 import org.jfree.chart.ChartPanel;
 
-/**
- *
- * @author Med Amine
- */
+
 public class VueGlobale extends JPanel {
 	private static final long serialVersionUID = 1L;
 	private DiagrammeGantt gc;

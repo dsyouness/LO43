@@ -6,6 +6,7 @@ public class Chauffeur {
 	private final int id_chauffeur, workerTimeSum, underTime, idleTime, cost;
 	private final ArrayList<Tache> tasks;
 
+        //Définition des paramétres des chauffeurs
 	public Chauffeur(int id, int workerTime, int underTime, int idleTime,
 			int cost, ArrayList<Tache> tasks) {
 		this.id_chauffeur = id;
@@ -16,14 +17,17 @@ public class Chauffeur {
 		this.tasks = tasks;
 	}
 
+        //Permet de récupérer le coût
 	public int getCost() {
 		return this.cost;
 	}
+        //Permet de récupérer le coût après conversion sous forme horaire
         public String getgetCostconvert(){
             return new String((this.cost) / 60
 				+ "h " + this.cost % 60 + "m");
         }
 
+        //Permettent de récupérer les heures de début et fin de service
 	public Date getDebutService() {
 		Date minimum = tasks.get(0).getHeureDepartMinutes();
 		for (Tache task : tasks)
@@ -40,10 +44,12 @@ public class Chauffeur {
 		return maximum;
 	}
 
+        //Permet de récupérer l'Id chauffeur
 	public int getId() {
 		return this.id_chauffeur;
 	}
 
+        //Permet de récupérer idleTime converti
 	public String getidleTimeConvert() {
 		return new String((this.idleTime) / 60 + "h "
 				+ this.idleTime % 60 + "m");
@@ -53,10 +59,12 @@ public class Chauffeur {
 		return this.idleTime;
 	}
 
+        //Permet de récupérer la liste des tâches
 	public ArrayList<Tache> getTasks() {
 		return this.tasks;
 	}
 
+     //Permettent de récupérer les différents paramètres
 	public String getUnderTimeSumConvert() {
 		return new String((this.underTime)  / 60 + "h "
 				+ this.underTime % 60 + "m");
